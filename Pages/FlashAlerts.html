@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Map Filter</title>
+    <title>Flash Alerts</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <!-- <script>
       tailwind.config = {
         theme: {
@@ -37,7 +37,7 @@
       <div class="flex w-full top">
         <!-- ---left content-- -->
         <div
-          class="w-16 lg:w-20 xl:w-24 bg-gray-200 overflow-y-auto h-full overflow-x-hidden"
+          class="w-16 lg:w-20 xl:w-24 bg-gray-200 overflow-y-auto h-full overflow-x-hidden pb-6"
         >
           <div
             class="flex items-center bg-custom-yellow text-black justify-center w-full menu-height"
@@ -56,8 +56,9 @@
           </div>
           <div class="">
             <!-- menu number -1  -->
-            <div
-              class="flex flex-col items-center justify-center w-full menu-height bg-active-border border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            <a
+              href="index.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
             >
               <button class="text-xl xl:text-2xl">
                 <i class="fas fa-solid fa-compass"></i>
@@ -67,10 +68,11 @@
               >
                 UKRAINE RISK MAP
               </p>
-            </div>
+            </a>
             <!-- menu number -2  -->
-            <div
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            <a
+              href="FlashAlerts.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height bg-active-border"
             >
               <button class="text-xl xl:text-2xl">
                 <i class="fas fa-solid fa-circle-notch"></i>
@@ -80,7 +82,7 @@
               >
                 FLASH Alerts
               </p>
-            </div>
+            </a>
             <!-- menu number -3  -->
             <div
               class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
@@ -189,7 +191,7 @@
         </div>
 
         <!-- ---right content-- -->
-        <div class="w-full right-bg">
+        <div class="w-full right-bg h-full">
           <header class="menu-height w-full">
             <h2
               class="flex justify-center items-center text-white text-sm px-6 h-full"
@@ -198,15 +200,21 @@
             </h2>
           </header>
           <div class="w-full map-content-height">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7497568.715992224!2d85.04596142271285!3d23.427176529853078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1712571627316!5m2!1sen!2sbd"
-              style="border: 0; width: 100%; height: 60%"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <div class="middle-right-height-without-map bg-opacity-30">
+              <div class="h-1/2 flex justify-center items-center">
+                <h2 class="font-bold text-slate text-3xl text-center">
+                  <span class="text-yellow bg-slate px-3 opacity-90 drop-shadow"
+                    >Human verified</span
+                  >
+                  risk intelligence alerts for <br />
+                  travel risk management and duty of care
+                </h2>
+              </div>
+              <div class="h-1/2 yellow-gradient"></div>
+            </div>
+            <!-- bottom content -->
             <div
-              class="bg-white inner-content-height grid grid-cols-3 gap-8 px-12 relative"
+              class="bg-white inner-content-height grid grid-cols-3 gap-8 px-8 relative"
             >
               <div class="absolute -top-10 right-0">
                 <button
@@ -217,131 +225,219 @@
               </div>
               <!-- 1st section -->
               <div class="overflow-y-auto overflow-x-hidden mt-1 mb-3">
-                <div class="pt-6 pr-7 pb-3">
-                  <h2 class="font-bold text-black text-2xl">
-                    Ukraine Risk Map
-                  </h2>
-                  <p class="text-xs text-gray-400 font-medium mt-1">
-                    Updated on 31/05/2024 13:36hrs UTC
+                <div class="bg-gray-200 py-5 px-8 mr-5 mt-6">
+                  <p class="text-sm text-slate font-semibold mb-4">Filters</p>
+                  <form class="w-full space-y-3 pb-2">
+                    <select
+                      class="w-full bg-transparent border-b border-gray-500 pb-2 outline-none text-sm text-gray-600"
+                      id="cars"
+                      name="cars"
+                    >
+                      <option
+                        class="text-sm text-gray-600 font-medium"
+                        value="volvo"
+                      >
+                        Select Country…
+                      </option>
+                      <option
+                        class="text-sm text-gray-600 font-medium"
+                        value="saab"
+                      >
+                        Saab 95
+                      </option>
+                      <option
+                        class="text-sm text-gray-600 font-medium"
+                        value="mercedes"
+                      >
+                        Mercedes SLK
+                      </option>
+                      <option
+                        class="text-sm text-gray-600 font-medium"
+                        value="audi"
+                      >
+                        Audi TT
+                      </option>
+                    </select>
+                    <select
+                      class="w-full bg-transparent border-b border-gray-500 pb-2 outline-none text-sm text-gray-600"
+                      id="cars"
+                      name="cars"
+                    >
+                      <option
+                        class="text-sm text-gray-600 font-medium"
+                        value="volvo"
+                      >
+                        Select Alert Type...
+                      </option>
+                      <option
+                        class="text-sm text-gray-600 font-medium"
+                        value="saab"
+                      >
+                        Saab 95
+                      </option>
+                      <option
+                        class="text-sm text-gray-600 font-medium"
+                        value="mercedes"
+                      >
+                        Mercedes SLK
+                      </option>
+                      <option
+                        class="text-sm text-gray-600 font-medium"
+                        value="audi"
+                      >
+                        Audi TT
+                      </option>
+                    </select>
+                    <select
+                      class="w-full bg-transparent border-b border-gray-500 pb-2 outline-none text-sm text-gray-600"
+                      id="cars"
+                      name="cars"
+                    >
+                      <option
+                        class="text-sm text-gray-600 font-medium"
+                        value="volvo"
+                      >
+                        Select Period…
+                      </option>
+                      <option
+                        class="text-sm text-gray-600 font-medium"
+                        value="saab"
+                      >
+                        Saab 95
+                      </option>
+                      <option
+                        class="text-sm text-gray-600 font-medium"
+                        value="mercedes"
+                      >
+                        Mercedes SLK
+                      </option>
+                      <option
+                        class="text-sm text-gray-600 font-medium"
+                        value="audi"
+                      >
+                        Audi TT
+                      </option>
+                    </select>
+                    <!-- <input type="submit" value="Submit" /> -->
+                  </form>
+                </div>
+                <div class="px-10 mb-3">
+                  <p class="text-sm text-gray-600 py-5">
+                    At <b>Inherent Risks</b>, we proactively monitor risks in
+                    Ukraine, and ANNOUNCEMENT around the world, including
+                    political risks, natural disasters, acts of war and
+                    terrorism, and disruptive events such as inclement weather.
+                    We then provide human-verified and relevant incident alerts
+                    enabling leaders to make more informed decisions.
                   </p>
-                  <div class="w-full border-b my-3 border-black"></div>
-                  <div class="flex space-x-3 items-center">
-                    <p class="text-black font-semibold text-sm">
-                      Total Views :
+                  <div class="bg-slate w-full px-6 py-2">
+                    <p
+                      class="text-yellow font-bold opacity-80 text-sm text-center"
+                    >
+                      Register for FREE Access to Inherent Risks Alerts
                     </p>
-
-                    <div class="flex gap-1 items-center">
-                      <p class="font-semibold text-white bg-gray-800 px-2">1</p>
-                      <p class="font-semibold text-white bg-gray-800 px-2">2</p>
-                      <p class="font-semibold text-white bg-gray-800 px-2">3</p>
-                      <p class="font-semibold text-white bg-gray-800 px-2">4</p>
-                      <p class="font-semibold text-white bg-gray-800 px-2">5</p>
-                    </div>
                   </div>
-                  <p class="text-sm mt-5">
-                    An intelligence-led Ukraine Risk Map developed in May 2022
-                    by global risk advisory, <b>Inherent Risks</b> to provide an
-                    interactive and easy-to-use platform for insurance
-                    underwriters to determine rates and coverage. It has since
-                    been adopted by insurance brokers, underwriters, foreign
-                    governments, and organisations around the world as a trusted
-                    travel risk management and journey planning portal.
-                  </p>
                 </div>
               </div>
               <!-- 2nd section -->
               <div class="overflow-y-auto overflow-x-hidden mt-1 mb-3">
                 <div class="pt-6 pr-5 pb-3">
-                  <h2
-                    class="text-black font-bold py-[2px] px-2 inline-block bg-custom-yellow text-sm px-3"
-                  >
-                    Risk Zones
-                  </h2>
-                  <!-- green -->
-                  <div class="flex mt-5 space-x-3 items-start">
-                    <p style="width: 50%" class="h-5 bg-green-900"></p>
-                    <div class="mt-0">
-                      <p class="text-black font-bold mt-0">
-                        reen Zone - Moderate Risk
+                  <!-- red -->
+                  <div class="">
+                    <div class="flex space-x-2 items-center">
+                      <button
+                        class="w-7 h-7 rounded-full text-white text-xs bg-red-800"
+                      >
+                        <i
+                          style="font-size: 17px"
+                          class="material-icons text-xs"
+                          >rocket</i
+                        >
+                      </button>
+                      <p
+                        style="letter-spacing: 0.5px"
+                        class="bg-black py-1 px-4 traking-widest text-white text-xs font-bold"
+                      >
+                        UKRAINE
                       </p>
-                      <p class="text-xs text-gray-400 italic">
-                        (Medical Evacuation, Crisis Response and Personal
-                        Accident Insurance is Available.)
-                      </p>
+                      <p class="text-xs text-gray-600 font-medium">Alert</p>
                     </div>
+                    <p
+                      class="pl-9 pt-1 flex space-x-2 items-center text-sm text-gray-400"
+                    >
+                      10/05/2024 12:14hrs UTC
+                    </p>
+                    <p class="font-bold text-slate py-3">
+                      RUSSIA ATTEMPTS GROUND OFFENSIVE INTO KHARKIV
+                    </p>
                   </div>
                   <div
-                    class="w-full border-b border-dotted my-3 border-gray-400"
-                  ></div>
-                  <!-- orange -->
-                  <div class="flex mt-2 space-x-3 items-start">
-                    <p style="width: 50%" class="h-5 bg-yellow-800"></p>
-                    <div class="mt-0">
-                      <p class="text-black font-bold mt-0">
-                        reen Zone - Moderate Risk
-                      </p>
-                      <p class="text-xs text-gray-400 italic">
-                        (Medical Evacuation, Crisis Response and Personal
-                        Accident Insurance is Available.)
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="w-full border-b border-dotted my-3 border-gray-400"
+                    class="w-full border-b border-dashed my-2 border-gray-400"
                   ></div>
                   <!-- red -->
-                  <div class="flex mt-2 space-x-3 items-start">
-                    <p style="width: 50%" class="h-5 bg-red-900"></p>
-                    <div class="mt-0">
-                      <p class="text-black font-bold mt-0">
-                        reen Zone - Moderate Risk
+                  <div class="mt-6">
+                    <div class="flex space-x-2 items-center">
+                      <button
+                        class="w-7 h-7 rounded-full text-white text-xs bg-red-800"
+                      >
+                        <i
+                          style="font-size: 17px"
+                          class="material-icons text-xs"
+                          >rocket</i
+                        >
+                      </button>
+                      <p
+                        style="letter-spacing: 0.5px"
+                        class="bg-black py-1 px-4 traking-widest text-white text-xs font-bold"
+                      >
+                        UKRAINE
                       </p>
-                      <p class="text-xs text-gray-400 italic">
-                        (Medical Evacuation, Crisis Response and Personal
-                        Accident Insurance is Available.)
-                      </p>
+                      <p class="text-xs text-gray-600 font-medium">Alert</p>
                     </div>
+                    <p
+                      class="pl-9 pt-1 flex space-x-2 items-center text-sm text-gray-400"
+                    >
+                      10/05/2024 12:14hrs UTC
+                    </p>
+                    <p class="font-bold text-slate py-3">
+                      CHERNIHIV MISSILE STRIKE KILLS THREE AND WOUNDS EIGHT
+                    </p>
                   </div>
                   <div
-                    class="w-full border-b border-dotted my-3 border-gray-400"
+                    class="w-full border-b border-dashed my-2 border-gray-400"
                   ></div>
-                  <!-- black -->
-                  <div class="flex mt-2 space-x-3 items-start">
-                    <p style="width: 50%" class="h-5 bg-black"></p>
-                    <div class="mt-0">
-                      <p class="text-black font-bold mt-0">
-                        reen Zone - Moderate Risk
+                  <!-- blue -->
+                  <div class="mt-6">
+                    <div class="flex space-x-2 items-center">
+                      <button
+                        class="w-6 h-6 ring-2 ml-1 ring-red-600 rounded-full text-white text-xs bg-blue-800"
+                      >
+                        <i
+                          style="font-size: 17px"
+                          class="material-icons text-xs"
+                          >rocket</i
+                        >
+                      </button>
+                      <p
+                        style="letter-spacing: 0.5px"
+                        class="bg-black py-1 px-4 traking-widest text-white text-xs font-bold"
+                      >
+                        UKRAINE
                       </p>
-                      <p class="text-xs text-gray-400 italic">
-                        (Medical Evacuation, Crisis Response and Personal
-                        Accident Insurance is Available.)
-                      </p>
+                      <p class="text-xs text-gray-600 font-medium">Alert</p>
                     </div>
+                    <p
+                      class="pl-9 pt-1 flex space-x-2 items-center text-sm text-gray-400"
+                    >
+                      10/05/2024 12:14hrs UTC
+                    </p>
+                    <p class="font-bold text-slate py-3">
+                      CHERNIHIV MISSILE STRIKE KILLS THREE AND WOUNDS EIGHT
+                    </p>
                   </div>
                   <div
-                    class="w-full border-b border-dotted my-3 border-gray-400"
+                    class="w-full mb-5 border-b border-dashed my-2 border-gray-400"
                   ></div>
-                  <h2
-                    class="text-black mt-3 font-semibold py-[2px] px-3 text-sm inline-block bg-custom-yellow font-bold"
-                  >
-                    Symbols
-                  </h2>
-                  <div class="flex space-x-3 items-center mt-5">
-                    <button
-                      class="w-5 h-5 text-xs rounded-full bg-red-500 text-white"
-                    >
-                      <i class="fas fa-solid fa-globe"></i>
-                    </button>
-                    <p class="text-sm font-bold">Border Crossing Point</p>
-                  </div>
-                  <div class="flex space-x-3 items-center mt-3">
-                    <button
-                      class="w-5 h-5 text-xs rounded-full bg-red-500 text-white"
-                    >
-                      <i class="fas fa-solid fa-globe"></i>
-                    </button>
-                    <p class="text-sm font-bold">Border Crossing Point</p>
-                  </div>
                 </div>
               </div>
               <!-- 3rd section -->

@@ -57,7 +57,10 @@ iframe {
 
 .bg-slate {
   background-color: rgb(8 51 68);
+}
 
+.text-slate {
+  color: rgb(8 51 68);
 }
 
 /* Works in WebKit (Chrome, Safari) and Blink (Opera) */
@@ -152,7 +155,9 @@ footer {
 }
 
 .menu-height {
-  height: 80px;
+  /* height: 80px; */
+  height: 13%;
+  min-height: 80px;
 }
 
 .map-content-height {
@@ -163,6 +168,16 @@ footer {
   height: 40%;
 }
 
+.middle-right-height-without-map {
+  height: 55%;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)); */
+}
+
+.yellow-gradient {
+  background-image: linear-gradient(to right, rgba(255, 255, 0, 0.7) 10%, rgba(54, 83, 20, 0.7) 30%, rgba(54, 83, 20, 0.9) 60%);
+}
+
+
 .bottom-btn {
   left: 50%;
   right: 50%;
@@ -171,9 +186,11 @@ footer {
 
 .right-bg {
   background: url("./image/bg.jpg");
+
 }
 
+/* background-image: linear-gradient(rgba(0, 128, 0, 0.142),rgba(0, 128, 0, 0.217)) ,url("https://media.istockphoto.com/photos/plants-irrigation-system-picture-id1173342162?k=20&m=1173342162&s=612x612&w=0&h=Ph_Y6TBcdB6oxJ4V_irzXEWpTgwegkRKgFqDCuhLQlU="); */
 header {
 
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background: linear-gradient(rgba(8, 51, 68, 0.9), rgba(8, 51, 68, 0.9));
 }
