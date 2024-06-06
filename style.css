@@ -1,0 +1,179 @@
+/* Custom Tailwind Configuration */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: 'Helvetica Neue';
+  src: local('Helvetica Neue'),
+    url('./helvetica-neue-5/HelveticaNeueBlack.otf') format('otf'),
+    url('./helvetica-neue-5/HelveticaNeueBold.otf') format('otf'),
+    url('./helvetica-neue-5/HelveticaNeueItalic.ttf') format('otf'),
+    url('./helvetica-neue-5/HelveticaNeueMedium.woff2') format('woff2'),
+    url('./helvetica-neue-5/HelveticaNeueUltraLight.otf') format('otf');
+
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* body {
+  font-family: 'Helvetica Neue!important';
+} */
+
+
+/* .dynamic-content {
+  max-height: calc(100vh - 410px);
+}
+
+iframe {
+  width: 100%;
+  height: calc(100vh - 80px);
+
+  border: 0;
+  background-color: gainsboro;
+}
+
+@media screen and (max-width: 500px) and (min-width: 320px) {
+  .dynamic-content {
+    max-height: calc(100vh - 350px);
+
+  }
+}
+
+.dynamic-content-2 {
+  max-height: calc(100vh - 250px);
+}
+
+
+ */
+
+.bg-custom-yellow {
+  background-color: yellow;
+}
+
+.text-yellow {
+  color: yellow;
+}
+
+.bg-slate {
+  background-color: rgb(8 51 68);
+
+}
+
+/* Works in WebKit (Chrome, Safari) and Blink (Opera) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #a096967b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+  height: 20px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  background: linear-gradient(135deg,
+      green 0%,
+      yellow 35%,
+      orange 60%,
+      red 75%);
+  outline: none;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 0;
+  height: 0;
+  /* border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid black; */
+  width: 10px;
+  height: 15px;
+  background-color: black;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.btn-bg {
+  background-color: yellow;
+  border: 0;
+  outline: none;
+}
+
+.orange-color {
+  background-color: #fb923c;
+}
+
+.extra-bold {
+  font-weight: 700;
+}
+
+.small-text {
+  font-size: 9px;
+}
+
+.bg-active-border {
+  border-left: 6px solid yellow;
+}
+
+@media screen and (max-width: 1023px) {
+  .bg-active-border {
+    border-left: 4px solid #00b7b2;
+  }
+}
+
+/* new style */
+
+.top {
+  height: 96%;
+}
+
+footer {
+  height: 8%;
+}
+
+.menu-height {
+  height: 80px;
+}
+
+.map-content-height {
+  height: 87%;
+}
+
+.inner-content-height {
+  height: 40%;
+}
+
+.bottom-btn {
+  left: 50%;
+  right: 50%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.right-bg {
+  background: url("./image/bg.jpg");
+}
+
+header {
+
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
