@@ -3,7 +3,395 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Itinerary Traking</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script> -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="h-screen max-h-screen relative">
+      <!-- top-content -->
+      <div class="flex w-full top">
+        <!-- ---left content-- -->
+        <div
+          class="w-16 lg:w-20 xl:w-24 bg-gray-200 overflow-y-auto h-full overflow-x-hidden pb-6"
+        >
+          <div
+            class="flex items-center bg-custom-yellow text-black justify-center w-full menu-height"
+          >
+            <!-- <img
+              class="w-full h-full bg-custom-teal"
+              src="./image/icon.jpg"
+              alt=""
+            /> -->
+            <button class="text-2xl">
+              <i class="fas fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="text-2xl">
+              <i class="fas fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="">
+            <!-- menu number -1  -->
+            <a
+              href="index.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-compass"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                UKRAINE RISK MAP
+              </p>
+            </a>
+            <!-- menu number -2  -->
+            <a
+              href="FlashAlerts.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-circle-notch"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                FLASH Alerts
+              </p>
+            </a>
+            <!-- menu number -3  -->
+            <a
+              href="HighRisk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-umbrella"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                HIGH-RISK (RE)INSURANCE
+              </p>
+            </a>
+            <!-- menu number -4  -->
+            <a
+              href="CountryProfile.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-book-open"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                Country profile
+              </p>
+            </a>
+            <!-- menu number -5 -->
+            <a
+              href="TravelHealth.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-notes-medical"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                travel health
+              </p>
+            </a>
+            <!-- menu number -6 -->
+            <a
+              href="TravelRisk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-notes-medical"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                travel-RISK advisory
+              </p>
+            </a>
+            <!-- menu number -7 -->
+            <a
+              href="EmbassyFinder.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-building"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                embassy finder
+              </p>
+            </a>
+            <!-- menu number -8 -->
+            <a
+              href="ItineraryTraking.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height bg-active-border"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-globe"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                ITINERARY TRACKING
+              </p>
+            </a>
+            <!-- menu number -9 -->
+            <a
+              href="WarRisk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-clock"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                war risk data
+              </p>
+            </a>
+            <!-- menu number -10 -->
+            <a
+              href="HelpDesk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-hospital-user"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                24/7 support
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <!-- ---right content-- -->
+        <div class="w-full h-full">
+          <header class="menu-height w-full">
+            <h2
+              class="flex justify-center items-center text-white text-sm px-6 h-full"
+            >
+              This is header content
+            </h2>
+          </header>
+          <div class="w-full inner-content-height-third-page flex">
+            <div
+              class="overflow-y-auto right-inner-width bg-custom-yellow py-16 pl-10 pr-6"
+            >
+              <p class="text-2xl font-bold">Itinerary Tracking…</p>
+              <p class="text-gray-600">(including 24/7 Safety Check-in)</p>
+              <p class="text-sm font-bold py-4">
+                Enabling employers to fulfil their moral and legal, duty of care
+                obligations to their travelling staff.
+              </p>
+              <p class="text-sm text-gray-600">
+                Based on our experience of tracking thousands of trips across
+                Ukraine, Inherent Risks has developed an accurate and holistic
+                tracking solution that is fit-for-purpose and is effective even
+                when others fail.
+              </p>
+              <p class="text-gray-600 text-sm py-4">
+                Seeing these
+                <span class="font-semibold">duty of care</span> and
+                <span class="font-semibold">travel risk management</span>
+                failures reported time and again, we worked closely with
+                clients’ to understand their frustrations, set expectations, and
+                develop a solution that is proven to work across Ukraine, based
+                on several data points, including passive and active tracking.
+              </p>
+              <p class="text-gray-600 text-sm">
+                Our medical and security experts maintain an intelligence-led
+                and data-driven
+                <span class="font-semibold">Ukraine Risk Map</span> which
+                accurately plots key points of interest, security and safety
+                incidents, health epidemics, travel disruptions and live Member
+                locations throughout Ukraine, and its surrounding borders.
+              </p>
+              <p class="text-gray-600 text-sm py-4">
+                If an incident, threat or disruption occurs, a proactive,
+                locationspecific, and human-verified Alert is sent to Members,
+                via email or message, with an immediate Advisory which
+                recommends the relevant actions to take to mitigate any risk to
+                life and health..
+              </p>
+              <p class="text-sm font-bold pb-5 text-gray-800">
+                Individual and group trips are monitored 24/7 by qualified and
+                experienced, medical and security operations staff.
+              </p>
+            </div>
+            <div class="left-inner-width overflow-y-auto py-16 px-8 mr-3">
+              <p class="text-2xl font-bold">Safety Check-In…</p>
+              <p class="text-gray-600">(Unlimited, Multi-Trip Check-Ins)</p>
+              <p class="text-sm text-gray-500 py-5">
+                <span class="font-semibold text-slate">Clients’ </span> can
+                register their trip online, or via their travel administrator. A
+                link detailing how to do this will be emailed to you upon
+                purchase of our Membership, or as an insurance policyholder with
+                the Underwriters’ that Inherent Risks are retained by.
+              </p>
+              <p class="text-sm text-gray-500">
+                Inherent Risks works with each organisation and individual to
+                find a solution that fits their operational requirements, while
+                also respecting and adhering to operational security
+                requirements. While the option to ‘Check-In’ is provided, for
+                multiple trips per day if required, it is also not a necessity.
+                We work with foreign governments, defence contractors, war
+                crimes investigators, journalists, NGOs and and visiting
+                dignitaries to name a few. We understand the need for
+                confidentiality, especially in such a challenging environment as
+                Ukraine.
+              </p>
+              <p class="text-sm text-gray-500 py-5">
+                Our end-to-end Travel Tracking and Safety Check-In service
+                enables organisations to ensure that trips are monitored,
+                dangers and disruptions are alerted, calls for help are
+                answered, and to ensure compliance with travel policies,
+                warnings are issued when employees travel outside an agreed risk
+                parameter.
+              </p>
+              <p
+                style="border: 0.2px solid rgba(128, 128, 128, 0.733)"
+                class="w-full border-gray-700"
+              ></p>
+              <p class="py-5 text-2xl font-bold">Features…</p>
+              <div class="space-y-1">
+                <div class="flex space-x-3 items-center">
+                  <img
+                    class="w-3 h-3"
+                    src="../image/check-removebg-preview.png"
+                    alt=""
+                  />
+
+                  <p class="text-sm font-medium">
+                    Trip Departure and Arrival Monitoring
+                  </p>
+                </div>
+                <div class="flex space-x-3 items-center">
+                  <img
+                    class="w-3 h-3"
+                    src="../image/check-removebg-preview.png"
+                    alt=""
+                  />
+                  <p class="text-sm font-medium">Projected Journey Timings</p>
+                </div>
+                <div class="flex space-x-3 items-center">
+                  <img
+                    class="w-3 h-3"
+                    src="../image/check-removebg-preview.png"
+                    alt=""
+                  />
+                  <p class="text-sm font-medium">
+                    Itinerary Segments (Hotel/Transportation)
+                  </p>
+                </div>
+                <div class="flex space-x-3 items-center">
+                  <img
+                    class="w-3 h-3"
+                    src="../image/check-removebg-preview.png"
+                    alt=""
+                  />
+                  <p class="text-sm font-medium">
+                    Geolocation (Satellite GPS Tracking)
+                  </p>
+                </div>
+                <div class="flex space-x-3 items-center">
+                  <img
+                    class="w-3 h-3"
+                    src="../image/check-removebg-preview.png"
+                    alt=""
+                  />
+                  <p class="text-sm font-medium">
+                    Incident Monitoring & Alerts
+                    (Security/Weather/Pandemics/Natural Disasters)
+                  </p>
+                </div>
+                <div class="flex space-x-3 items-center">
+                  <img
+                    class="w-3 h-3"
+                    src="../image/check-removebg-preview.png"
+                    alt=""
+                  />
+                  <p class="text-sm font-medium">
+                    Safety Check-ins (via Encrypted Messaging Apps or Satellite
+                    Communications)
+                  </p>
+                </div>
+              </div>
+              <div class="flex space-x-2 items-center">
+                <p class="text-gray-500 text-sm py-4">
+                  To learn more about our services, email:
+                </p>
+                <a
+                  class="font-bold text-xs text-white py-2 px-6 text-yellow rounded-full bg-slate"
+                  href=""
+                  >support@inherentrisk.com</a
+                >
+              </div>
+              <p
+                style="border: 0.2px solid rgba(128, 128, 128, 0.733)"
+                class="w-full border-gray-400 mt-3"
+              ></p>
+              <p class="text-xs italic text-gray-500 my-5">
+                nherent Risks works in the best interest of the policyholder.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer-content -->
+
+      <div class="absolute bottom-10 z-20 bottom-btn">
+        <button
+          class="bg-gray-200 text-sm font-medium py-2 px-4 rounded-tl-xl rounded-tr-xl text-gray-600"
+        >
+          Disclaimer
+        </button>
+      </div>
+
+      <footer
+        class="flex justify-start items-center w-full bg-gray-200 bottom-0 absolute"
+      >
+        <h2 class="text-sm text-gray-800 pl-20 lg:pl-24 xl:pl-28">
+          Copyright © 2022 to 2024, Inherent Risks, All rights reserved
+        </h2>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  </body>
 </html>
