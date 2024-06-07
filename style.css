@@ -45,6 +45,11 @@ iframe {
 }
  */
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
 .bg-custom-yellow {
   background-color: yellow;
 }
@@ -161,6 +166,7 @@ footer {
 .map-content-height {
   /* height: 87%; */
   height: calc(100% - 13%);
+
 }
 
 .inner-content-height {
@@ -183,9 +189,13 @@ footer {
   /* transform: translate(-50%, -50%); */
 }
 
-.right-bg {
+/* .right-bg {
   background: url("./image/bg.jpg");
 
+} */
+
+.middle-right-height-without-map {
+  background: url("./image/bg.jpg");
 }
 
 header {
@@ -216,4 +226,8 @@ header {
   height: calc(100% - 13%);
 }
 
-.table-head-bg {}
+/* ......fifth ........*/
+
+.hidden {
+  display: none;
+}

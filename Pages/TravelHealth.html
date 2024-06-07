@@ -3,7 +3,306 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Travel Health</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="h-screen max-h-screen relative">
+      <!-- top-content -->
+      <div class="flex w-full top">
+        <!-- ---left content-- -->
+        <div
+          class="w-16 lg:w-20 xl:w-24 bg-gray-200 overflow-y-auto h-full overflow-x-hidden pb-6"
+        >
+          <div
+            class="flex items-center bg-custom-yellow text-black justify-center w-full menu-height"
+          >
+            <!-- <img
+              class="w-full h-full bg-custom-teal"
+              src="./image/icon.jpg"
+              alt=""
+            /> -->
+            <button class="text-2xl">
+              <i class="fas fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="text-2xl">
+              <i class="fas fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="">
+            <!-- menu number -1  -->
+            <a
+              href="index.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-compass"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                UKRAINE RISK MAP
+              </p>
+            </a>
+            <!-- menu number -2  -->
+            <a
+              href="FlashAlerts.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-circle-notch"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                FLASH Alerts
+              </p>
+            </a>
+            <!-- menu number -3  -->
+            <a
+              href="HighRisk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-umbrella"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                HIGH-RISK (RE)INSURANCE
+              </p>
+            </a>
+            <!-- menu number -4  -->
+            <a
+              href="CountryProfile.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-book-open"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                Country profile
+              </p>
+            </a>
+            <!-- menu number -5 -->
+            <a
+              href="TravelHealth.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height bg-active-border"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-notes-medical"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                travel health
+              </p>
+            </a>
+            <!-- menu number -6 -->
+            <a
+              href="TravelRisk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-notes-medical"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                travel-RISK advisory
+              </p>
+            </a>
+            <!-- menu number -7 -->
+            <a
+              href="EmbassyFinder.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-building"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                embassy finder
+              </p>
+            </a>
+            <!-- menu number -8 -->
+            <a
+              href="ItineraryTraking.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-globe"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                ITINERARY TRACKING
+              </p>
+            </a>
+            <!-- menu number -9 -->
+            <a
+              href="WarRisk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-clock"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                war risk data
+              </p>
+            </a>
+            <!-- menu number -10 -->
+            <a
+              href="HelpDesk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-hospital-user"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                24/7 support
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <!-- ---right content-- -->
+        <div class="w-full right-bg h-full">
+          <header class="menu-height w-full">
+            <h2
+              class="flex justify-center items-center text-white text-sm px-6 h-full"
+            >
+              This is header content
+            </h2>
+          </header>
+          <div class="w-full map-content-height">
+            <div class="middle-right-height-without-map bg-opacity-30">
+              <div class="h-1/2 flex justify-center items-center">
+                <h2 class="font-bold text-slate text-3xl text-center">
+                  <span
+                    style="padding-bottom: 2px"
+                    class="text-yellow bg-black px-3 opacity-70 bg-black drop-shadow"
+                    >Travel health risks</span
+                  >and recommendations <br />
+                  to lower your risk of becoming ill
+                </h2>
+              </div>
+              <div class="h-1/2 yellow-gradient"></div>
+            </div>
+            <!-- bottom content -->
+            <div
+              class="bg-white inner-content-height grid grid-cols-3 gap-5 px-8 relative"
+            >
+              <div class="absolute -top-10 right-0">
+                <button
+                  class="bg-gray-200 py-6 px-2 rounded-tl-xl rounded-bl-xl text-gray-600"
+                >
+                  <i class="fas fa-solid fa-chevron-left"></i>
+                </button>
+              </div>
+              <!-- 1st section -->
+              <div class="overflow-y-auto overflow-x-hidden mb-3 pt-8">
+                <div style="border: 1px solid black" class="p-8 mr-8">
+                  <p class="text-sm text-gray-500">
+                    This section contains information on possible
+                    <b class="text-slate">health risks</b> and restrictions in
+                    Ukraine. Follow this advice to lower your risk of becoming
+                    ill while travelling.
+                  </p>
+                  <p class="text-sm text-gray-500 py-4">
+                    Not all health risks are listed here. To better understand
+                    your individual risks, consult a healthcare professional or
+                    visit a travel health clinic
+                    <b class="text-slate"
+                      >at least eight-weeks before you travel.
+                    </b>
+                  </p>
+                  <p class="text-sm text-gray-500">
+                    Many health risks cannot be prevented by vaccines, therefore
+                    other precautions need to be taken.
+                  </p>
+                </div>
+                <p
+                  class="text-xs italic font-semibold text-white px-10 py-5 bg-slate mt-6 mr-8 mb-10"
+                >
+                  If you feel unwell on your return home from Ukraine, seek
+                  medical advice from a healthcare professional and inform them
+                  of your travel history.
+                </p>
+              </div>
+              <!-- 2nd section -->
+              <div class="overflow-y-auto overflow-x-hidden ml-2 mb-3">
+                <div class="pt-8 pr-3 pb-8 mr-6">
+                  <p class="text-sm text-gray-700">
+                    Before you travel to Ukraine check that you have
+                    <a
+                      class="underline bg-slate pb-1 px-1 text-yellow font-bold"
+                      href=""
+                      >appropriate travel insurance</a
+                    >
+                    that is valid in Ukraine for local treatment and/or
+                    unexpected medical evacuation. If you're not insured, you
+                    may have to pay thousands of dollars up-front for medical
+                    care and repatriation home.
+                  </p>
+                  <p class="text-gray-700 text-sm pt-5 pb-4">
+                    A quick guide to specific requirements and recommendations
+                    for safe travel in Ukraine.
+                  </p>
+                  <div id="toggle-container" class="space-y-2"></div>
+                </div>
+              </div>
+              <!-- 3rd section -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer-content -->
+
+      <div class="absolute bottom-10 z-20 bottom-btn">
+        <button
+          class="bg-gray-200 text-sm font-medium py-2 px-4 rounded-tl-xl rounded-tr-xl text-gray-600"
+        >
+          Disclaimer
+        </button>
+      </div>
+
+      <footer
+        class="flex justify-start items-center w-full bg-gray-200 bottom-0 absolute"
+      >
+        <h2 class="text-sm text-gray-800 pl-20 lg:pl-24 xl:pl-28">
+          Copyright © 2022 to 2024, Inherent Risks, All rights reserved
+        </h2>
+      </footer>
+    </div>
+
+    <script src="../index.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  </body>
 </html>
