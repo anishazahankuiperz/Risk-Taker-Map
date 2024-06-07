@@ -3,7 +3,490 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Country Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script> -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="h-screen max-h-screen relative">
+      <!-- top-content -->
+      <div class="flex w-full top">
+        <!-- ---left content-- -->
+        <div
+          class="w-16 lg:w-20 xl:w-24 bg-gray-200 overflow-y-auto h-full overflow-x-hidden pb-6"
+        >
+          <div
+            class="flex items-center bg-custom-yellow text-black justify-center w-full menu-height"
+          >
+            <!-- <img
+              class="w-full h-full bg-custom-teal"
+              src="./image/icon.jpg"
+              alt=""
+            /> -->
+            <button class="text-2xl">
+              <i class="fas fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="text-2xl">
+              <i class="fas fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="">
+            <!-- menu number -1  -->
+            <a
+              href="index.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-compass"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                UKRAINE RISK MAP
+              </p>
+            </a>
+            <!-- menu number -2  -->
+            <a
+              href="FlashAlerts.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-circle-notch"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                FLASH Alerts
+              </p>
+            </a>
+            <!-- menu number -3  -->
+            <a
+              href="HighRisk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-umbrella"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                HIGH-RISK (RE)INSURANCE
+              </p>
+            </a>
+            <!-- menu number -4  -->
+            <a
+              href="CountryProfile.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height bg-active-border"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-book-open"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                Country profile
+              </p>
+            </a>
+            <!-- menu number -5 -->
+            <a
+              href="TravelHealth.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-notes-medical"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                travel health
+              </p>
+            </a>
+            <!-- menu number -6 -->
+            <a
+              href="TravelRisk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-notes-medical"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                travel-RISK advisory
+              </p>
+            </a>
+            <!-- menu number -7 -->
+            <a
+              href="EmbassyFinder.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-building"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                embassy finder
+              </p>
+            </a>
+            <!-- menu number -8 -->
+            <a
+              href="ItineraryTraking.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-globe"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                ITINERARY TRACKING
+              </p>
+            </a>
+            <!-- menu number -9 -->
+            <a
+              href="WarRisk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-clock"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                war risk data
+              </p>
+            </a>
+            <!-- menu number -10 -->
+            <a
+              href="HelpDesk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-hospital-user"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                24/7 support
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <!-- ---right content-- -->
+        <div class="w-full right-bg h-full">
+          <header class="menu-height w-full">
+            <h2
+              class="flex justify-center items-center text-white text-sm px-6 h-full"
+            >
+              This is header content
+            </h2>
+          </header>
+          <div class="w-full map-content-height">
+            <div class="middle-right-height-without-map bg-opacity-30">
+              <div class="h-1/2 flex justify-center items-center">
+                <h2 class="font-bold text-slate text-3xl text-center">
+                  Since Russia invaded on February 24, 2022, Ukraine <br />
+                  has been categorised as a
+                  <span
+                    style="padding-bottom: 2px"
+                    class="text-yellow bg-slate px-3 opacity-70 bg-black drop-shadow"
+                    >‘Country at War’</span
+                  >
+                </h2>
+              </div>
+              <div class="h-1/2 yellow-gradient"></div>
+            </div>
+            <!-- bottom content -->
+            <div
+              class="bg-white inner-content-height grid grid-cols-3 gap-5 px-8 relative"
+            >
+              <div class="absolute -top-10 right-0">
+                <button
+                  class="bg-gray-200 py-6 px-2 rounded-tl-xl rounded-bl-xl text-gray-600"
+                >
+                  <i class="fas fa-solid fa-chevron-left"></i>
+                </button>
+              </div>
+              <!-- 1st section -->
+              <div class="overflow-y-auto overflow-x-hidden mb-3 pt-6">
+                <div style="border: 1px solid black" class="p-6 mr-8">
+                  <p class="text-2xl font-bold mt-3">Country Profile…</p>
+                  <p class="text-sm text-gray-500 py-4">
+                    Since February 24, 2022, a nationwide
+                    <b class="text-slate">State of Emergency</b> and
+                    <b class="text-slate">Martial Law</b> has been in effect in
+                    Ukraine. A Notice to Air Missions (NOTAM) has been issued
+                    prohibiting civilian flights into, out of, within, or over
+                    Ukraine. Entrance and Exit of foreign citizens is allowed.
+                    Border Crossing Points in Poland, Slovakia, Hungary, Romania
+                    and Moldova are currently open.
+                  </p>
+                  <p class="text-sm text-gray-500">
+                    Attacks against major cities, including Kyiv, are frequent.
+                    Several regions in the East and South of the country are
+                    currently under Russian control. There is an increased risk
+                    to life and health.
+                  </p>
+                  <p class="text-sm text-gray-500 pt-4">
+                    If you do travel to Ukraine, it is important that you
+                    understand the risks, take significant measures to mitigate
+                    those risks, and ensure you have
+                    <a
+                      class="text-xl font-semibold text-yellow bg-slate pb-1 underline px-1 mt-0"
+                      href=""
+                      >appropriate travel insurance</a
+                    >
+                    that is valid in Ukraine, including war risk cover, for
+                    local treatment and/or unexpected medical evacuation.
+                  </p>
+                </div>
+              </div>
+              <!-- 2nd section -->
+              <div class="overflow-y-auto overflow-x-hidden ml-2 mb-3">
+                <div class="pt-6 pr-3 pb-8">
+                  <p class="font-semibold text-xl">Quick Facts</p>
+                  <p
+                    style="border: 1px solid rgba(0, 0, 0, 0.656)"
+                    class="w-28 mb-7"
+                  ></p>
+                  <div class="data space-y-2">
+                    <div class="flex space-x-1 items-center border-b pb-2">
+                      <p
+                        style="font-weight: 700"
+                        class="font-semibold text-base text-slate"
+                      >
+                        Country Flag / Coat of Arms -
+                      </p>
+                      <div class="flex space-x-1">
+                        <img
+                          class="h-8"
+                          src="../image/flag/uka-flag.png"
+                          alt=""
+                        />
+                        <img
+                          class="w-12 h-8"
+                          src="../image/flag/uk-co-flag.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="flex space-x-1 items-center border-b pb-3">
+                      <p
+                        style="font-weight: 700"
+                        class="font-semibold text-base text-slate"
+                      >
+                        Area -
+                      </p>
+                      <p class="text-gray-500">603,550 sq km</p>
+                    </div>
+                    <div class="flex space-x-1 items-center border-b pb-3">
+                      <p
+                        style="font-weight: 700"
+                        class="font-semibold text-base text-slate"
+                      >
+                        Population of Ukraine -
+                      </p>
+                      <p class="text-gray-500">43.8 million</p>
+                    </div>
+                    <div class="flex space-x-1 items-center border-b pb-3">
+                      <p
+                        style="font-weight: 700"
+                        class="font-semibold text-base text-slate"
+                      >
+                        Population Displaced -
+                      </p>
+                      <p class="text-gray-500">8.5 million</p>
+                    </div>
+                    <div class="flex space-x-1 items-center border-b pb-3">
+                      <p
+                        style="font-weight: 700"
+                        class="font-semibold text-base text-slate"
+                      >
+                        Capital -
+                      </p>
+                      <p class="text-gray-500">Kyiv</p>
+                    </div>
+                    <div class="flex space-x-1 items-center border-b pb-3">
+                      <p
+                        style="font-weight: 700"
+                        class="font-semibold text-base text-slate"
+                      >
+                        Currency -
+                      </p>
+                      <p class="text-gray-500">Hryvnia (UAH)</p>
+                    </div>
+                    <div class="flex space-x-1 items-center border-b pb-3">
+                      <p
+                        style="font-weight: 700"
+                        class="font-semibold text-base text-slate"
+                      >
+                        Dialling Code -
+                      </p>
+                      <p class="text-gray-500">+380</p>
+                    </div>
+                    <div class="flex space-x-1 items-center border-b pb-3">
+                      <p
+                        style="font-weight: 700"
+                        class="font-semibold text-base text-slate"
+                      >
+                        President -
+                      </p>
+                      <p class="text-gray-500">
+                        Volodymyr Zelenskyy (since 20 May, 2019)
+                      </p>
+                    </div>
+                    <div class="flex space-x-1 items-center border-b pb-3">
+                      <p
+                        style="font-weight: 700"
+                        class="font-semibold text-base text-slate"
+                      >
+                        Prime Minister -
+                      </p>
+                      <p class="text-gray-500">
+                        Denys Shmyhal (since 4 March, 2020)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 3rd section -->
+              <div class="overflow-y-auto overflow-x-hidden ml-4 mb-3">
+                <div class="pt-6 pr-5 pb-3 mr-3">
+                  <div
+                    class="flex space-x-2 justify-center items-center bg-slate text-white px-2 py-[2px]"
+                  >
+                    <button>
+                      <i class="material-icons text-sm text-yellow text-xl mt-2"
+                        >settings</i
+                      >
+                    </button>
+                    <p
+                      class="font-semibold drop-shadow py-2 text-yellow opacity-90 px-1"
+                    >
+                      AVERAGE UKRAINE COUNTRY RISK RATINGS
+                    </p>
+                  </div>
+                  <div class="mt-6">
+                    <div class="flex space-x-6 mb-2">
+                      <p style="width: 30%" class="w-30%"></p>
+                      <div style="width: 70%" class="flex justify-between">
+                        <p class="text-black font-medium text-xs">Moderate</p>
+                        <p class="text-black font-medium text-xs">
+                          Significant
+                        </p>
+                        <p class="text-black font-medium text-xs">Extreme</p>
+                      </div>
+                    </div>
+                    <div class="space-y-3">
+                      <div class="flex space-x-5">
+                        <p
+                          style="width: 30%"
+                          class="text-sm font-bold text-back uppercase"
+                        >
+                          Healthy
+                        </p>
+                        <input style="width: 70%" class="" type="range" />
+                      </div>
+                      <div class="flex space-x-5">
+                        <p
+                          style="width: 30%"
+                          class="text-sm font-bold text-back uppercase"
+                        >
+                          safety
+                        </p>
+                        <input style="width: 70%" class="" type="range" />
+                      </div>
+                      <div class="flex space-x-5">
+                        <p
+                          style="width: 30%"
+                          class="text-sm font-bold text-back uppercase"
+                        >
+                          crime
+                        </p>
+                        <input style="width: 70%" class="" type="range" />
+                      </div>
+                      <div class="flex space-x-5">
+                        <p
+                          style="width: 30%"
+                          class="text-sm font-bold text-back uppercase"
+                        >
+                          tERRORISM
+                        </p>
+                        <input style="width: 70%" class="" type="range" />
+                      </div>
+                      <div class="flex space-x-5">
+                        <p
+                          style="width: 30%"
+                          class="text-sm font-bold text-back uppercase"
+                        >
+                          political
+                        </p>
+                        <input style="width: 70%" class="" type="range" />
+                      </div>
+                      <div class="flex space-x-5">
+                        <p
+                          style="width: 30%"
+                          class="text-sm font-bold text-back uppercase"
+                        >
+                          curruption
+                        </p>
+                        <input style="width: 70%" class="" type="range" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer-content -->
+
+      <div class="absolute bottom-10 z-20 bottom-btn">
+        <button
+          class="bg-gray-200 text-sm font-medium py-2 px-4 rounded-tl-xl rounded-tr-xl text-gray-600"
+        >
+          Disclaimer
+        </button>
+      </div>
+
+      <footer
+        class="flex justify-start items-center w-full bg-gray-200 bottom-0 absolute"
+      >
+        <h2 class="text-sm text-gray-800 pl-20 lg:pl-24 xl:pl-28">
+          Copyright © 2022 to 2024, Inherent Risks, All rights reserved
+        </h2>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  </body>
 </html>

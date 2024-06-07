@@ -43,8 +43,6 @@ iframe {
 .dynamic-content-2 {
   max-height: calc(100vh - 250px);
 }
-
-
  */
 
 .bg-custom-yellow {
@@ -161,7 +159,8 @@ footer {
 }
 
 .map-content-height {
-  height: 87%;
+  /* height: 87%; */
+  height: calc(100% - 13%);
 }
 
 .inner-content-height {
@@ -169,7 +168,7 @@ footer {
 }
 
 .middle-right-height-without-map {
-  height: 55%;
+  height: 60%;
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)); */
 }
 
@@ -213,6 +212,8 @@ header {
 }
 
 .inner-content-height-third-page {
-  height: 87%;
+  /* height: 87%; */
   height: calc(100% - 13%);
 }
+
+.table-head-bg {}
