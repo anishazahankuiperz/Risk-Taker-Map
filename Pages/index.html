@@ -32,12 +32,12 @@
     />
   </head>
   <body>
-    <div class="h-screen max-h-screen relative">
+    <div class="md:h-screen md:max-h-screen relative">
       <!-- top-content -->
       <div class="flex w-full top">
         <!-- ---left content-- -->
         <div
-          class="w-16 lg:w-20 xl:w-24 bg-gray-200 overflow-y-auto h-full overflow-x-hidden"
+          class="w-24 bg-gray-200 overflow-y-auto h-full overflow-x-hidden hidden md:block"
         >
           <div
             class="flex items-center bg-custom-yellow text-black justify-center w-full menu-height"
@@ -191,23 +191,46 @@
 
         <!-- ---right content-- -->
         <div class="w-full right-bg">
-          <header class="menu-height w-full px-12">
+          <!-- responsive header -->
+          <div
+            class="h-12 px-6 bg-custom-yellow flex space-x-2 items-center md:hidden"
+          >
+            <div class="flex items-center text-black">
+              <button class="text-xl">
+                <i class="fas fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="text-xl">
+                <i class="fas fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+            <p class="uppercase text-sm font-semibold">UKRAINE RESPONSE</p>
+          </div>
+          <header class="menu-height w-full px-8 md:px-12 hidden md:block">
             <div class="flex justify-between h-full items-center">
-              <div class="flex space-x-5 items-center">
-                <p class="text-base uppercase text-gray-200 font-semibold">
+              <div class="flex space-x-3 md:space-x-5 items-center">
+                <p
+                  class="text-sm md:text-base uppercase text-gray-200 font-semibold"
+                >
                   UKRAINE
                 </p>
-                <p style="width: 2px" class="h-7 bg-gray-200"></p>
-                <p class="text-base uppercase amber-color font-semibold">
+                <p style="width: 2px" class="h-5 md:h-7 bg-gray-200"></p>
+                <p
+                  class="text-sm md:text-base uppercase amber-color font-semibold"
+                >
                   TRAVEL RISK MANAGEMENT PORTAL
                 </p>
               </div>
-              <p class="text-base uppercase text-gray-200 font-semibold">
+              <p
+                class="text-sm md:text-base uppercase text-gray-200 font-semibold"
+              >
                 BY <span class="amber-color">INHERENT RISKS</span>
               </p>
             </div>
           </header>
-          <div class="w-full map-content-height">
+
+          <div
+            class="w-full map-content-height overflow-y-scroll xl:overflow-hidden"
+          >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7497568.715992224!2d85.04596142271285!3d23.427176529853078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1712571627316!5m2!1sen!2sbd"
               style="border: 0; width: 100%; height: 60%"
@@ -216,9 +239,9 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
             <div
-              class="bg-white inner-content-height grid grid-cols-3 gap-8 px-12 relative"
+              class="bg-white inner-content-height grid grid-cols-1 xl:grid-cols-3 gap-5 xl:gap-8 px-5 sm:px-8 md:px-12 relative h-full xl:h-auto"
             >
-              <div class="absolute -top-10 right-0">
+              <div class="hidden xl:block absolute -top-10 right-0">
                 <button
                   class="bg-gray-200 py-6 px-2 rounded-tl-xl rounded-bl-xl text-gray-600"
                 >
@@ -226,8 +249,8 @@
                 </button>
               </div>
               <!-- 1st section -->
-              <div class="overflow-y-auto overflow-x-hidden my-1">
-                <div class="pt-6 pr-7 pb-3 pb-12">
+              <div class="xl:overflow-y-auto xl:overflow-x-hidden my-1">
+                <div class="pt-6 pr-7 pb-3 xl:pb-12">
                   <h2 class="font-bold text-black text-2xl">
                     Ukraine Risk Map...
                   </h2>
@@ -261,8 +284,8 @@
                 </div>
               </div>
               <!-- 2nd section -->
-              <div class="overflow-y-auto overflow-x-hidden my-1">
-                <div class="pt-6 pr-5 pb-3">
+              <div class="xl:overflow-y-auto xl:overflow-x-hidden my-1">
+                <div class="pt-3 xl:pt-6 pr-5 pb-3">
                   <h2
                     class="text-black font-bold py-[2px] px-2 inline-block bg-custom-yellow text-sm px-3"
                   >
@@ -362,8 +385,8 @@
                 </div>
               </div>
               <!-- 3rd section -->
-              <div class="overflow-y-auto overflow-x-hidden my-1">
-                <div class="pt-6 pr-5 pb-3">
+              <div class="xl:overflow-y-auto xl:overflow-x-hidden my-1">
+                <div class="xl:pt-6 pr-5 pb-3">
                   <div
                     class="flex space-x-2 justify-center items-center bg-slate text-white px-2 py-[2px]"
                   >
@@ -455,7 +478,7 @@
 
       <!-- footer-content -->
 
-      <div class="absolute bottom-10 z-20 bottom-btn">
+      <div class="hidden xl:block absolute bottom-10 z-20 bottom-btn">
         <button
           class="bg-gray-200 text-sm font-medium py-2 px-4 rounded-tl-xl rounded-tr-xl text-gray-600"
         >
@@ -464,15 +487,33 @@
       </div>
 
       <footer
-        class="flex justify-start items-center w-full bg-gray-200 bottom-0 absolute"
+        class="flex justify-start items-center w-full bg-gray-200 bottom-0 absolute hidden xl:block"
       >
         <h2 class="text-sm text-gray-900 pl-20 lg:pl-24 xl:pl-28">
           Copyright © 2022 to 2024, Inherent Risks, All rights reserved
         </h2>
       </footer>
+
+      <div
+        id="menu-btn"
+        class="bg-black py-5 w-full text-white absolute bottom-0"
+      >
+        <p class="pl-2">menu</p>
+      </div>
+      <div
+        id="menu-content"
+        class="bg-red-400 h-40 py-5 w-full text-white absolute bottom-0"
+      >
+        <p
+          id="close-icon"
+          class="pl-2 ml-auto text-2xl flex w-full justify-end pr-5"
+        >
+          x
+        </p>
+      </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   </body>
 </html>

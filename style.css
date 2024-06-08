@@ -146,11 +146,7 @@ input[type="range"]::-webkit-slider-thumb {
   border-left: 6px solid yellow;
 }
 
-@media screen and (max-width: 1023px) {
-  .bg-active-border {
-    border-left: 4px solid #00b7b2;
-  }
-}
+
 
 /* new style */
 
@@ -236,7 +232,7 @@ header {
 
 /* ......fifth ........*/
 
-.hidden {
+.display-hidden {
   display: none;
 }
 
@@ -251,4 +247,25 @@ header {
   background: linear-gradient(rgba(8, 51, 68, 0.9), rgba(8, 51, 68, 0.9)), url("./image/bg.jpg");
   background-size: cover;
 
+}
+
+
+/* responsive */
+
+/* ------1st page----- */
+
+
+@media screen and (max-width: 767px) {
+  header {
+    max-height: 40px;
+  }
+
+  .map-content-height {
+    /* top: 45px; */
+    height: 90vh;
+  }
+
+  .inner-content-height {
+    height: auto;
+  }
 }
