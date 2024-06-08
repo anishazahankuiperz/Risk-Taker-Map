@@ -3,7 +3,343 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Help Desk</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script> -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="h-screen max-h-screen relative">
+      <!-- top-content -->
+      <div class="flex w-full top">
+        <!-- ---left content-- -->
+        <div
+          class="w-16 lg:w-20 xl:w-24 bg-gray-200 overflow-y-auto h-full overflow-x-hidden"
+        >
+          <div
+            class="flex items-center bg-custom-yellow text-black justify-center w-full menu-height"
+          >
+            <!-- <img
+              class="w-full h-full bg-custom-teal"
+              src="./image/icon.jpg"
+              alt=""
+            /> -->
+            <button class="text-2xl">
+              <i class="fas fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="text-2xl">
+              <i class="fas fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="">
+            <!-- menu number -1  -->
+            <a
+              href="index.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-compass"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                UKRAINE RISK MAP
+              </p>
+            </a>
+            <!-- menu number -2  -->
+            <a
+              href="FlashAlerts.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-circle-notch"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                FLASH Alerts
+              </p>
+            </a>
+            <!-- menu number -3  -->
+            <a
+              href="HighRisk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-umbrella"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                HIGH-RISK (RE)INSURANCE
+              </p>
+            </a>
+            <!-- menu number -4  -->
+            <a
+              href="CountryProfile.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-book-open"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                Country profile
+              </p>
+            </a>
+            <!-- menu number -5 -->
+            <a
+              href="TravelHealth.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-notes-medical"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                travel health
+              </p>
+            </a>
+            <!-- menu number -6 -->
+            <a
+              href="TravelRisk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-notes-medical"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                travel-RISK advisory
+              </p>
+            </a>
+            <!-- menu number -7 -->
+            <a
+              href="EmbassyFinder.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-building"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                embassy finder
+              </p>
+            </a>
+            <!-- menu number -8 -->
+            <a
+              href="ItineraryTraking.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-globe"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                ITINERARY TRACKING
+              </p>
+            </a>
+            <!-- menu number -9 -->
+            <a
+              href="WarRisk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-clock"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                war risk data
+              </p>
+            </a>
+            <!-- menu number -10 -->
+            <a
+              href="HelpDesk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height bg-active-border"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-hospital-user"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                24/7 support
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <!-- ---right content-- -->
+        <div class="w-full right-bg">
+          <header class="menu-height w-full px-12">
+            <div class="flex justify-between h-full items-center">
+              <div class="flex space-x-5 items-center">
+                <p class="text-base uppercase text-gray-200 font-semibold">
+                  UKRAINE
+                </p>
+                <p style="width: 2px" class="h-7 bg-gray-200"></p>
+                <p class="text-base uppercase amber-color font-semibold">
+                  TRAVEL RISK MANAGEMENT PORTAL
+                </p>
+              </div>
+              <p class="text-base uppercase text-gray-200 font-semibold">
+                BY <span class="amber-color">INHERENT RISKS</span>
+              </p>
+            </div>
+          </header>
+          <div class="w-full map-content-height">
+            <div class="top-help py-20">
+              <div
+                style="max-width: 900px"
+                class="flex justify-center mx-auto items-center h-full"
+              >
+                <div style="width: 45%" class="h-full flex justify-center">
+                  <img
+                    class="h-full bg-cover shadow-xl"
+                    src="../image/help.PNG"
+                    alt=""
+                  />
+                </div>
+                <div style="width: 55%" class="">
+                  <h2
+                    class="bg-slate text-yellow text-2xl font-bold px-2 py-1 inline mr-2"
+                  >
+                    Support & Assistance
+                  </h2>
+                  <span class="text-2xl font-bold text-slate"
+                    >when you need it</span
+                  >
+                  <p class="text-xs text-gray-600 py-2 2xl:py-4">
+                    Travelling in Ukraine makes reliable customer support more
+                    important than ever. Our 24/7 support team is available on
+                    demand to help at every stage.
+                  </p>
+                  <p class="text-xs text-gray-600">
+                    If you require Emergency Medical and/or Security Assistance,
+                    please call or email the Emergency Assistance contact
+                    details on your Insurance or Response Membership policy
+                  </p>
+                  <p class="text-xs text-gray-600 py-2 2xl:py-4">
+                    In the event of an Emergency, you are also advised to
+                    contact your country’s Consular services, although their
+                    response in Ukraine is likely to be extremely limited.
+                  </p>
+                  <p class="text-xs text-gray-600">
+                    To contact local Emergency Services, call:
+                  </p>
+                  <div class="space-y-2 py-2 2xl:py-4">
+                    <div class="flex items-center space-x-2">
+                      <p
+                        class="bg-slate text-yellow px-2 text-xs font-semibold"
+                      >
+                        Fire
+                      </p>
+                      <p class="text-gray-600 text-xs font-medium">Call 101</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <p
+                        class="bg-slate text-yellow px-2 text-xs font-semibold"
+                      >
+                        AMBULANCE
+                      </p>
+                      <p class="text-gray-600 text-xs font-medium">Call 103</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <p
+                        class="bg-slate text-yellow px-2 text-xs font-semibold"
+                      >
+                        POLICE
+                      </p>
+                      <p class="text-gray-600 text-xs font-medium">Call 102</p>
+                    </div>
+                  </div>
+                  <p style="font-size: 12px" class="italic text-gray-500">
+                    Always obtain a police report when reporting a crime.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-help">
+              <div
+                style="max-width: 900px"
+                class="flex justify-center items-center mx-auto h-full"
+              >
+                <div class="space-y-1">
+                  <p class="text-2xl font-bold text-yellow opacity-90">
+                    How can we help you?
+                  </p>
+                  <p class="text-base font-medium text-gray-200">
+                    Let’s talk about the challenges affecting your organisation.
+                  </p>
+                </div>
+                <div
+                  style="border: 1px solid yellow"
+                  class="rounded-full px-10 py-2 flex justify-end space-x-5 ml-auto"
+                >
+                  <p
+                    class="text-base font-semibold whitespace-nowrap text-gray-200"
+                  >
+                    Get in touch
+                  </p>
+                  <i style="" class="material-icons w-3/5 text-gray-200">
+                    trending_flat</i
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer-content -->
+
+      <div class="absolute bottom-10 z-20 bottom-btn">
+        <button
+          class="bg-gray-200 text-sm font-medium py-2 px-4 rounded-tl-xl rounded-tr-xl text-gray-600"
+        >
+          Disclaimer
+        </button>
+      </div>
+
+      <footer
+        class="flex justify-start items-center w-full bg-gray-200 bottom-0 absolute"
+      >
+        <h2 class="text-sm text-gray-800 pl-20 lg:pl-24 xl:pl-28">
+          Copyright © 2022 to 2024, Inherent Risks, All rights reserved
+        </h2>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  </body>
 </html>

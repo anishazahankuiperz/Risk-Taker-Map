@@ -200,12 +200,21 @@
 
         <!-- ---right content-- -->
         <div class="w-full right-bg h-full">
-          <header class="menu-height w-full">
-            <h2
-              class="flex justify-center items-center text-white text-sm px-6 h-full"
-            >
-              This is header content
-            </h2>
+          <header class="menu-height w-full px-12">
+            <div class="flex justify-between h-full items-center">
+              <div class="flex space-x-5 items-center">
+                <p class="text-base uppercase text-gray-200 font-semibold">
+                  UKRAINE
+                </p>
+                <p style="width: 2px" class="h-7 bg-gray-200"></p>
+                <p class="text-base uppercase amber-color font-semibold">
+                  TRAVEL RISK MANAGEMENT PORTAL
+                </p>
+              </div>
+              <p class="text-base uppercase text-gray-200 font-semibold">
+                BY <span class="amber-color">INHERENT RISKS</span>
+              </p>
+            </div>
           </header>
           <div class="w-full map-content-height">
             <div class="middle-right-height-without-map bg-opacity-30">
@@ -232,12 +241,12 @@
                 </button>
               </div>
               <!-- 1st section -->
-              <div class="overflow-y-auto overflow-x-hidden mt-1 mb-3">
-                <div class="bg-gray-200 py-5 px-8 mr-5 mt-6">
+              <div class="overflow-y-auto overflow-x-hidden my-1">
+                <div class="bg-gray-200 py-5 px-8 mr-5 my-6">
                   <p class="text-sm text-slate font-semibold mb-4">Filters</p>
                   <form class="w-full space-y-3 pb-2">
                     <select
-                      class="w-full bg-transparent border-b border-gray-500 pb-2 outline-none text-sm text-gray-600"
+                      class="w-full bg-transparent border-b border-gray-500 pb-2 outline-none text-sm text-gray-600 cursor-pointer"
                       id="cars"
                       name="cars"
                     >
@@ -267,7 +276,7 @@
                       </option>
                     </select>
                     <select
-                      class="w-full bg-transparent border-b border-gray-500 pb-2 outline-none text-sm text-gray-600"
+                      class="w-full bg-transparent border-b border-gray-500 pb-2 outline-none text-sm text-gray-600 cursor-pointer"
                       id="cars"
                       name="cars"
                     >
@@ -297,7 +306,7 @@
                       </option>
                     </select>
                     <select
-                      class="w-full bg-transparent border-b border-gray-500 pb-2 outline-none text-sm text-gray-600"
+                      class="w-full bg-transparent border-b border-gray-500 pb-2 outline-none text-sm text-gray-600 cursor-pointer"
                       id="cars"
                       name="cars"
                     >
@@ -329,7 +338,7 @@
                     <!-- <input type="submit" value="Submit" /> -->
                   </form>
                 </div>
-                <div class="px-10 mb-3">
+                <div class="px-10 mb-6">
                   <p class="text-sm text-gray-600 py-5">
                     At
                     <span class="font-medium text-slate">Inherent Risks</span>,
@@ -350,8 +359,8 @@
                 </div>
               </div>
               <!-- 2nd section -->
-              <div class="overflow-y-auto overflow-x-hidden mt-1 ml-2 mb-3">
-                <div class="pt-6 pr-5 pb-3">
+              <div class="overflow-y-auto overflow-x-hidden my-1 ml-2">
+                <div class="pt-6 pr-5 pb-3 mb-5">
                   <!-- red -->
                   <div class="">
                     <div class="flex space-x-2 items-center">
@@ -451,7 +460,7 @@
                 </div>
               </div>
               <!-- 3rd section -->
-              <div class="overflow-y-auto overflow-x-hidden mt-1 mb-3 pr-5">
+              <div class="overflow-y-auto overflow-x-hidden my-1 pr-5">
                 <div class="third-step-bg w-full p-8 space-y-8">
                   <p class="text-2xl font-bold text-yellow opacity-90">
                     Enabling people and organizations to safely
@@ -468,7 +477,9 @@
                   </button>
                   <p class="text-sm text-white">
                     Visit the
-                    <a class="font-medium underline" href="">Inherent Risks</a>
+                    <a class="font-semibold underline" href=""
+                      >Inherent Risks</a
+                    >
                     website
                   </p>
                 </div>

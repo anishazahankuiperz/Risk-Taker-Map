@@ -129,6 +129,11 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: #fb923c;
 }
 
+.amber-color {
+  color: rgb(218, 218, 32);
+  ;
+}
+
 .extra-bold {
   font-weight: 700;
 }
@@ -159,13 +164,13 @@ footer {
 
 .menu-height {
   /* height: 80px; */
-  height: 13%;
+  height: 10%;
   min-height: 80px;
 }
 
 .map-content-height {
   /* height: 87%; */
-  height: calc(100% - 13%);
+  height: calc(100% - 10%);
 
 }
 
@@ -196,10 +201,12 @@ footer {
 
 .middle-right-height-without-map {
   background: url("./image/bg.jpg");
+  background-size: cover;
 }
 
 header {
   background: linear-gradient(rgba(8, 51, 68, 0.9), rgba(8, 51, 68, 0.9)), url("./image/bg.jpg");
+  background-size: cover;
 }
 
 
@@ -208,6 +215,7 @@ header {
 .third-step-bg {
 
   background-image: linear-gradient(rgba(8, 51, 68, 0.98), rgb(8, 51, 68, 0.98)), url("./image/bg.jpg");
+  background-size: cover;
 
 }
 
@@ -223,11 +231,24 @@ header {
 
 .inner-content-height-third-page {
   /* height: 87%; */
-  height: calc(100% - 13%);
+  height: calc(100% - 10%);
 }
 
 /* ......fifth ........*/
 
 .hidden {
   display: none;
+}
+
+/* ......last/ help desk ........*/
+.top-help {
+  height: 70%;
+}
+
+.bottom-help {
+
+  height: 20%;
+  background: linear-gradient(rgba(8, 51, 68, 0.9), rgba(8, 51, 68, 0.9)), url("./image/bg.jpg");
+  background-size: cover;
+
 }

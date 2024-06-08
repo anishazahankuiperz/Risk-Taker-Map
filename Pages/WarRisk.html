@@ -3,7 +3,396 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>War Risk</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script> -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="h-screen max-h-screen relative">
+      <!-- top-content -->
+      <div class="flex w-full top">
+        <!-- ---left content-- -->
+        <div
+          class="w-16 lg:w-20 xl:w-24 bg-gray-200 overflow-y-auto h-full overflow-x-hidden"
+        >
+          <div
+            class="flex items-center bg-custom-yellow text-black justify-center w-full menu-height"
+          >
+            <!-- <img
+              class="w-full h-full bg-custom-teal"
+              src="./image/icon.jpg"
+              alt=""
+            /> -->
+            <button class="text-2xl">
+              <i class="fas fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="text-2xl">
+              <i class="fas fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="">
+            <!-- menu number -1  -->
+            <a
+              href="index.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-compass"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                UKRAINE RISK MAP
+              </p>
+            </a>
+            <!-- menu number -2  -->
+            <a
+              href="FlashAlerts.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height bg-active-border"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-circle-notch"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                FLASH Alerts
+              </p>
+            </a>
+            <!-- menu number -3  -->
+            <a
+              href="HighRisk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-umbrella"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                HIGH-RISK (RE)INSURANCE
+              </p>
+            </a>
+            <!-- menu number -4  -->
+            <a
+              href="CountryProfile.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-book-open"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                Country profile
+              </p>
+            </a>
+            <!-- menu number -5 -->
+            <a
+              href="TravelHealth.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-notes-medical"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                travel health
+              </p>
+            </a>
+            <!-- menu number -6 -->
+            <a
+              href="TravelRisk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-notes-medical"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                travel-RISK advisory
+              </p>
+            </a>
+            <!-- menu number -7 -->
+            <a
+              href="EmbassyFinder.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-building"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                embassy finder
+              </p>
+            </a>
+            <!-- menu number -8 -->
+            <a
+              href="ItineraryTraking.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-globe"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                ITINERARY TRACKING
+              </p>
+            </a>
+            <!-- menu number -9 -->
+            <a
+              href="WarRisk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height bg-active-border"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-clock"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                war risk data
+              </p>
+            </a>
+            <!-- menu number -10 -->
+            <a
+              href="HelpDesk.html"
+              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-300 text-black aside-menu cursor-pointer py-1 menu-height"
+            >
+              <button class="text-xl xl:text-2xl">
+                <i class="fas fa-solid fa-hospital-user"></i>
+              </button>
+              <p
+                class="small-text uppercase font-semibold text-center mt-1 px-2"
+              >
+                24/7 support
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <!-- ---right content-- -->
+        <div class="w-full right-bg">
+          <header class="menu-height w-full px-12">
+            <div class="flex justify-between h-full items-center">
+              <div class="flex space-x-5 items-center">
+                <p class="text-base uppercase text-gray-200 font-semibold">
+                  UKRAINE
+                </p>
+                <p style="width: 2px" class="h-7 bg-gray-200"></p>
+                <p class="text-base uppercase amber-color font-semibold">
+                  TRAVEL RISK MANAGEMENT PORTAL
+                </p>
+              </div>
+              <p class="text-base uppercase text-gray-200 font-semibold">
+                BY <span class="amber-color">INHERENT RISKS</span>
+              </p>
+            </div>
+          </header>
+          <div class="w-full map-content-height">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7497568.715992224!2d85.04596142271285!3d23.427176529853078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1712571627316!5m2!1sen!2sbd"
+              style="border: 0; width: 100%; height: 60%"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div
+              class="bg-white inner-content-height grid grid-cols-3 relative"
+            >
+              <div class="absolute -top-10 right-0">
+                <button
+                  class="bg-gray-200 py-6 px-2 rounded-tl-xl rounded-bl-xl text-gray-600"
+                >
+                  <i class="fas fa-solid fa-chevron-left"></i>
+                </button>
+              </div>
+              <!-- 1st section -->
+
+              <div class="overflow-y-auto overflow-x-hidden mb-2 2xl:mb-0">
+                <div class="pt-6 px-6 pb-2">
+                  <div
+                    style="border: 1px solid rgba(0, 0, 0, 0.64)"
+                    class="p-6"
+                  >
+                    <p class="text-2xl font-bold mb-5">War Risks Data…</p>
+                    <p class="text-gray-500 text-sm">
+                      Inherent Risks has spearheaded a Multilateral Data Sharing
+                      Agreement between several Government of Ukraine agencies
+                      and participating Lloyd’s and Company Market Insurers.
+                    </p>
+                    <p class="text-gray-500 text-sm py-4">
+                      In addition, we aggregate intelligence from reliable and
+                      verified open source data and reporting, including
+                      satellite imagery, emergency and rescue service reports,
+                      and live claims data.
+                    </p>
+                    <p class="text-gray-500 text-sm">
+                      Through our proprietary platform, we have logged detailed
+                      data on war-related incidents and locations, dated from
+                      when Russia invaded Ukraine on 24th February, 2024 to
+                      Present Day.
+                    </p>
+                    <p class="text-gray-500 text-sm mt-4 italic">
+                      For security reasons, data has been omitted on military
+                      targets. Data is only collected for territories under
+                      Ukrainian control
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- 2nd section -->
+              <div
+                class="overflow-y-auto overflow-x-hidden mb-2 2xl:mb-0 ml-8 pr-8"
+              >
+                <div class="pt-12">
+                  <h2 class="text-black font-bold text-2xl">
+                    A&H Claims Data…
+                  </h2>
+                  <p class="text-gray-500 text-sm mt-5">
+                    Since February 2022, when Russia invaded Ukraine, Inherent
+                    Risks has kept an Incident Register of all insured and
+                    uninsured incidents where an international or local,
+                    employee or volunteer, of a foreign company or organisation
+                    was either injured or killed.
+                  </p>
+                  <p class="text-gray-500 text-sm py-4">
+                    In addition, we have kept a Register of all people insured
+                    through our underwriter clients’ who have travelled within
+                    the Green, Orange and Red Zones.
+                  </p>
+                  <p class="text-gray-500 text-sm mb-10">
+                    From that data we have developed a live Heat Map, integrated
+                    with real-time global intelligence and claims cost data,
+                    which enables us to better inform clients' of increased risk
+                    locations and activities, and better enables underwriters'
+                    to price location and industry specific risks across
+                    Ukraine.
+                  </p>
+                </div>
+              </div>
+              <!-- 3rd section -->
+              <div
+                class="overflow-y-auto overflow-x-hidden mb-2 2xl:mb-0 bg-custom-yellow"
+              >
+                <div class="pt-12 px-8 h-full">
+                  <p class="text-xs text-slate">
+                    Detailed and bespoke Reports and Risk Assessments are
+                    available for a fee on damage to property and
+                    infrastructure, as well as deaths and injuries, to the
+                    following sectors:
+                  </p>
+                  <div class="space-y-1 mt-5">
+                    <div class="flex space-x-3 items-center">
+                      <img
+                        class="w-3 h-3"
+                        src="../image/check-removebg-preview.png"
+                        alt=""
+                      />
+
+                      <p class="text-sm font-medium">
+                        (Re)Insurance Underwriters
+                      </p>
+                    </div>
+                    <div class="flex space-x-3 items-center">
+                      <img
+                        class="w-3 h-3"
+                        src="../image/check-removebg-preview.png"
+                        alt=""
+                      />
+                      <p class="text-sm font-medium">Insurance Brokers</p>
+                    </div>
+                    <div class="flex space-x-3 items-center">
+                      <img
+                        class="w-3 h-3"
+                        src="../image/check-removebg-preview.png"
+                        alt=""
+                      />
+                      <p class="text-sm font-medium">
+                        International Financial Institutions
+                      </p>
+                    </div>
+                    <div class="flex space-x-3 items-center">
+                      <img
+                        class="w-3 h-3"
+                        src="../image/check-removebg-preview.png"
+                        alt=""
+                      />
+                      <p class="text-sm font-medium">Investors</p>
+                    </div>
+                    <div class="flex space-x-3 items-center">
+                      <img
+                        class="w-3 h-3"
+                        src="../image/check-removebg-preview.png"
+                        alt=""
+                      />
+                      <p class="text-sm font-medium">Governments</p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-slate rounded-full py-2 px-6 text-yellow font-medium flex items-center space-x-5 inline-flex cursor-pointer my-6"
+                  >
+                    <p class="text-xl opacity-80 font-medium whitespace-nowrap">
+                      Get in touch
+                    </p>
+                    <p class="w-20 mt-2 w-full">
+                      <i class="material-icons w-full"> trending_flat</i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer-content -->
+
+      <div class="absolute bottom-10 z-20 bottom-btn">
+        <button
+          class="bg-gray-200 text-sm font-medium py-2 px-4 rounded-tl-xl rounded-tr-xl text-gray-600"
+        >
+          Disclaimer
+        </button>
+      </div>
+
+      <footer
+        class="flex justify-start items-center w-full bg-gray-200 bottom-0 absolute"
+      >
+        <h2 class="text-sm text-gray-800 pl-20 lg:pl-24 xl:pl-28">
+          Copyright © 2022 to 2024, Inherent Risks, All rights reserved
+        </h2>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  </body>
 </html>

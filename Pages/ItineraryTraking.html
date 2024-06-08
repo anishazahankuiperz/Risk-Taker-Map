@@ -200,14 +200,30 @@
 
         <!-- ---right content-- -->
         <div class="w-full h-full">
-          <header class="menu-height w-full">
-            <h2
-              class="flex justify-center items-center text-white text-sm px-6 h-full"
-            >
-              This is header content
-            </h2>
+          <header class="menu-height w-full px-12">
+            <div class="flex justify-between h-full items-center">
+              <div class="flex space-x-5 items-center">
+                <p class="text-base uppercase text-gray-200 font-semibold">
+                  UKRAINE
+                </p>
+                <p style="width: 2px" class="h-7 bg-gray-200"></p>
+                <p class="text-base uppercase amber-color font-semibold">
+                  TRAVEL RISK MANAGEMENT PORTAL
+                </p>
+              </div>
+              <p class="text-base uppercase text-gray-200 font-semibold">
+                BY <span class="amber-color">INHERENT RISKS</span>
+              </p>
+            </div>
           </header>
-          <div class="w-full inner-content-height-third-page flex">
+          <div class="w-full inner-content-height-third-page flex relative">
+            <div class="absolute -top-10 right-0">
+              <button
+                class="bg-gray-200 py-6 px-2 rounded-tl-xl rounded-bl-xl text-gray-600"
+              >
+                <i class="fas fa-solid fa-chevron-left"></i>
+              </button>
+            </div>
             <div
               class="overflow-y-auto right-inner-width bg-custom-yellow py-16 pl-10 pr-6"
             >
@@ -350,7 +366,7 @@
                   </p>
                 </div>
               </div>
-              <div class="flex space-x-2 items-center">
+              <div class="flex space-x-2 items-center mt-3">
                 <p class="text-gray-500 text-sm py-4">
                   To learn more about our services, email:
                 </p>
@@ -364,7 +380,7 @@
                 style="border: 0.2px solid rgba(128, 128, 128, 0.733)"
                 class="w-full border-gray-400 mt-3"
               ></p>
-              <p class="text-xs italic text-gray-500 my-5">
+              <p class="text-sm italic text-gray-500 my-5">
                 nherent Risks works in the best interest of the policyholder.
               </p>
             </div>
