@@ -34,7 +34,7 @@
   <body>
     <div class="md:h-screen md:max-h-screen relative">
       <!-- top-content -->
-      <div class="flex w-full top">
+      <div class="flex w-full top md:pb-0">
         <!-- ---left content-- -->
         <div
           class="w-24 bg-gray-200 overflow-y-auto h-full overflow-x-hidden hidden md:block"
@@ -190,7 +190,7 @@
         </div>
 
         <!-- ---right content-- -->
-        <div class="w-full right-bg">
+        <div class="w-full right-bg pb-2 md:pb-0">
           <!-- responsive header -->
           <div
             class="h-12 px-6 bg-custom-yellow flex space-x-2 items-center md:hidden"
@@ -229,7 +229,7 @@
           </header>
 
           <div
-            class="w-full map-content-height overflow-y-scroll xl:overflow-hidden"
+            class="w-full map-content-height overflow-y-scroll lg:overflow-hidden"
           >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7497568.715992224!2d85.04596142271285!3d23.427176529853078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1712571627316!5m2!1sen!2sbd"
@@ -239,9 +239,9 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
             <div
-              class="bg-white inner-content-height grid grid-cols-1 xl:grid-cols-3 gap-5 xl:gap-8 px-5 sm:px-8 md:px-12 relative h-full xl:h-auto"
+              class="bg-white inner-content-height grid grid-cols-1 lg:grid-cols-3 gap-5 xl:gap-8 px-5 sm:px-8 md:px-12 lg:px-6 xl:px-12 relative h-full xl:h-auto"
             >
-              <div class="hidden xl:block absolute -top-10 right-0">
+              <div class="hidden lg:block absolute -top-10 right-0">
                 <button
                   class="bg-gray-200 py-6 px-2 rounded-tl-xl rounded-bl-xl text-gray-600"
                 >
@@ -249,8 +249,8 @@
                 </button>
               </div>
               <!-- 1st section -->
-              <div class="xl:overflow-y-auto xl:overflow-x-hidden my-1">
-                <div class="pt-6 pr-7 pb-3 xl:pb-12">
+              <div class="lg:overflow-y-auto lg:overflow-x-hidden my-1">
+                <div class="pt-6 lg:pr-4 xl:pr-7 pb-3 lg:pb-12">
                   <h2 class="font-bold text-black text-2xl">
                     Ukraine Risk Map...
                   </h2>
@@ -284,8 +284,8 @@
                 </div>
               </div>
               <!-- 2nd section -->
-              <div class="xl:overflow-y-auto xl:overflow-x-hidden my-1">
-                <div class="pt-3 xl:pt-6 pr-5 pb-3">
+              <div class="lg:overflow-y-auto lg:overflow-x-hidden my-1">
+                <div class="pt-3 lg:pt-6 pr-5 pb-3">
                   <h2
                     class="text-black font-bold py-[2px] px-2 inline-block bg-custom-yellow text-sm px-3"
                   >
@@ -385,8 +385,8 @@
                 </div>
               </div>
               <!-- 3rd section -->
-              <div class="xl:overflow-y-auto xl:overflow-x-hidden my-1">
-                <div class="xl:pt-6 pr-5 pb-3">
+              <div class="lg:overflow-y-auto lg:overflow-x-hidden my-1">
+                <div class="xl:pt-6 lg:pr-3 xl:pr-5 pb-3">
                   <div
                     class="flex space-x-2 justify-center items-center bg-slate text-white px-2 py-[2px]"
                   >
@@ -487,29 +487,159 @@
       </div>
 
       <footer
-        class="flex justify-start items-center w-full bg-gray-200 bottom-0 absolute hidden xl:block"
+        class="flex justify-start items-center w-full bg-gray-200 bottom-0 absolute hidden md:block"
       >
-        <h2 class="text-sm text-gray-900 pl-20 lg:pl-24 xl:pl-28">
+        <h2
+          class="text-sm text-gray-900 pl-20 lg:pl-24 xl:pl-28 flex justify-start items-center pt-4 lg:pt-0"
+        >
           Copyright © 2022 to 2024, Inherent Risks, All rights reserved
         </h2>
       </footer>
 
+      <!-- for responsive bottom menu -->
+
       <div
         id="menu-btn"
-        class="bg-black py-5 w-full text-white absolute bottom-0"
+        class="bg-slate py-4 w-full text-white absolute bottom-0 flex items-center justify-between px-5 md:hidden"
       >
-        <p class="pl-2">menu</p>
+        <i class="material-icons text-yellow">menu</i>
+        <p class="text-xs font-medium text-gray-300 text-center">
+          Copyright © 2022 to 2024, Inherent Risks, <br />
+          All rights reserved
+        </p>
       </div>
       <div
         id="menu-content"
-        class="bg-red-400 h-40 py-5 w-full text-white absolute bottom-0"
+        class="bg-slate pt-3 pb-5 w-full text-white absolute bottom-0 md:hidden"
       >
         <p
           id="close-icon"
-          class="pl-2 ml-auto text-2xl flex w-full justify-end pr-5"
+          class="rounded-full flex ml-auto justify-end pr-4 mb-2"
         >
-          x
+          <i
+            style="border: 1px solid yellow; padding: 2px; font-size: 14px"
+            class="material-icons text-yellow rounded-full"
+            >close</i
+          >
         </p>
+        <div
+          class="grid grid-cols-3 divide-y divide-x text-yellow border-b border-gray-600"
+        >
+          <!-- menu number -1  -->
+          <a
+            href="index.html"
+            class="flex flex-col items-center justify-center w-full menu-height bg-active-border border-t border-gray-600 aside-menu cursor-pointer"
+          >
+            <button class="text-xl xl:text-2xl">
+              <i class="fas fa-solid fa-compass"></i>
+            </button>
+            <p class="small-text uppercase font-semibold text-center mt-1 px-2">
+              UKRAINE RISK MAP
+            </p>
+          </a>
+          <!-- menu number -2  -->
+          <a
+            href="FlashAlerts.html"
+            class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-600 text-yellow aside-menu cursor-pointer"
+          >
+            <button class="text-xl xl:text-2xl">
+              <i class="fas fa-solid fa-circle-notch"></i>
+            </button>
+            <p class="small-text uppercase font-semibold text-center mt-1 px-2">
+              FLASH Alerts
+            </p>
+          </a>
+          <!-- menu number -3  -->
+          <a
+            href="HighRisk.html"
+            class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-600 text-yellow aside-menu cursor-pointer"
+          >
+            <button class="text-xl xl:text-2xl">
+              <i class="fas fa-solid fa-umbrella"></i>
+            </button>
+            <p class="small-text uppercase font-semibold text-center mt-1 px-2">
+              HIGH-RISK (RE)INSURANCE
+            </p>
+          </a>
+          <!-- menu number -4  -->
+          <a
+            href="CountryProfile.html"
+            class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-600 text-yellow aside-menu cursor-pointer"
+          >
+            <button class="text-xl xl:text-2xl">
+              <i class="fas fa-solid fa-book-open"></i>
+            </button>
+            <p class="small-text uppercase font-semibold text-center mt-1 px-2">
+              Country profile
+            </p>
+          </a>
+          <!-- menu number -5 -->
+          <a
+            href="TravelHealth.html"
+            class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-600 text-yellow aside-menu cursor-pointer"
+          >
+            <button class="text-xl xl:text-2xl">
+              <i class="fas fa-solid fa-notes-medical"></i>
+            </button>
+            <p class="small-text uppercase font-semibold text-center mt-1 px-2">
+              travel health
+            </p>
+          </a>
+          <!-- menu number -6 -->
+          <a
+            href="TravelRisk.html"
+            class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-600 text-yellow aside-menu cursor-pointer"
+          >
+            <button class="text-xl xl:text-2xl">
+              <i class="fas fa-solid fa-notes-medical"></i>
+            </button>
+            <p class="small-text uppercase font-semibold text-center mt-1 px-2">
+              travel-RISK advisory
+            </p>
+          </a>
+          <!-- menu number -7 -->
+          <div
+            class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-600 text-yellow aside-menu cursor-pointer"
+          >
+            <button class="text-xl xl:text-2xl">
+              <i class="fas fa-solid fa-building"></i>
+            </button>
+            <p class="small-text uppercase font-semibold text-center mt-1 px-2">
+              embassy finder
+            </p>
+          </div>
+          <!-- menu number -8 -->
+          <a
+            href="ItineraryTraking.html"
+            class="flex flex-col items-center justify-center w-full menu-height border border-gray-600 text-yellow aside-menu cursor-pointer"
+          >
+            <button class="text-xl xl:text-2xl">
+              <i class="fas fa-solid fa-globe"></i>
+            </button>
+            <p class="small-text uppercase font-semibold text-center mt-1 px-2">
+              ITINERARY TRACKING
+            </p>
+          </a>
+          <!-- menu number -9 -->
+          <a
+            href="WarRisk.html"
+            class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-600 text-yellow aside-menu cursor-pointer"
+          >
+            <button class="text-xl xl:text-2xl">
+              <i class="fas fa-solid fa-clock"></i>
+            </button>
+            <p class="small-text uppercase font-semibold text-center mt-1 px-2">
+              war risk data
+            </p>
+          </a>
+        </div>
+        <a
+          href="HelpDesk.html"
+          class="mx-12 mt-3 rounded-full flex justify-center items-center py-2 bg-custom-yellow space-x-1"
+        >
+          <i class="material-icons text-black text-sm">call</i>
+          <p class="text-sm font-semibold text-black">24/7 help desk</p>
+        </a>
       </div>
     </div>
 

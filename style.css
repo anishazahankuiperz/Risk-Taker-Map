@@ -260,6 +260,13 @@ header {
     max-height: 40px;
   }
 
+  .menu-height {
+
+
+    min-height: 65px;
+  }
+
+
   .map-content-height {
     /* top: 45px; */
     height: 90vh;
