@@ -13,9 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Add event listener to close icon to hide the menu content
   closeIcon.addEventListener("click", function () {
+    console.log("click");
     menuContent.style.display = "none";
   });
 });
+
+console.log("hellow");
 
 // .........five page ..........
 const fifthPageToggleData = [
