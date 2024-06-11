@@ -2,23 +2,27 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuBtn = document.getElementById("menu-btn");
   const menuContent = document.getElementById("menu-content");
   const closeIcon = document.getElementById("close-icon");
+  const menuItem = document.getElementById("menu-height");
 
-  // Show menu content initially
   // menuContent.style.display = "block";
 
-  // Add event listener to menu button to show the menu content
-  menuBtn.addEventListener("click", function () {
-    menuContent.style.display = "block";
-  });
+  if (menuBtn) {
+    menuBtn.addEventListener("click", function () {
+      menuContent.style.display = "block";
+    });
+  }
+  if (closeIcon) {
+    closeIcon.addEventListener("click", function () {
+      menuContent.style.display = "none";
+    });
+  }
 
-  // Add event listener to close icon to hide the menu content
-  closeIcon.addEventListener("click", function () {
-    console.log("click");
-    menuContent.style.display = "none";
-  });
+  if (menuItem) {
+    menuItem.addEventListener("click", function () {
+      menuContent.style.display = "none";
+    });
+  }
 });
-
-console.log("hellow");
 
 // .........five page ..........
 const fifthPageToggleData = [
