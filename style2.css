@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* main-container */
+
+.main-container {
+    height: 100vh;
+}
+
+
+header {
+    height: 70px;
+    background: linear-gradient(#003138d0, #003138d0), url("./image/bg.jpg");
+    background-size: cover;
+
+}
+
+footer {
+    height: 50px;
+
+}
+
+.middle-content {
+    height: calc(100vh - 120px);
+}
+
+.middle-content-left-menu {
+    width: 100px
+}
+
+.middle-content-right-part {
+    width: calc(100% - 100px);
+}
+
+/* global style */
+.yellow-border {
+    border: 1px solid #F5F509;
+}
+
+.menu-height {
+    min-height: 80px;
+}
+
+.small-text {
+    font-size: 50%;
+}
+
+.bg-gray {
+    background-color: #C7DDE0;
+}
+
+.amber-color {
+    color: rgb(218, 218, 32);
+
+}
+
+.responsive-header {
+    height: 50px;
+}
+
+.header-left {
+    width: 100px;
+    height: 70px;
+}
+
+.header-right {
+    width: calc(100% - 100px);
+}
+
+.bg-custom-yellow {
+    background-color: #F5F509;
+}
+
+.bg-active-border {
+    border-left: 6px solid #F5F509;
+}
+
+.border-gray {
+    border-color: rgba(107, 114, 128, 0.324);
+    ;
+}
+
+.text-yellow {
+    color: #F5F509;
+}
+
+.text-slate {
+    color: #003138;
+}
+
+.bg-slate {
+    background-color: #003138;
+}
+
+.bottom-btn {
+    left: 50%;
+    right: 50%;
+    bottom: 45px;
+
+}
+
+/* 1st page */
+.map {
+    height: 60%;
+}
+
+.below-map-content-height {
+    height: 40%;
+}
+
+.third-step-bg {
+    background: linear-gradient(#003138d0, #003138d0), url("./image/bg.jpg");
+    background-size: cover;
+}
+
+/* 2nd page */
+.middle-right-height-without-map {
+    background: url("./image/bg.jpg");
+    background-size: cover;
+    height: 60%;
+}
+
+.yellow-gradient {
+    background-image: linear-gradient(to right, rgba(255, 255, 0, 0.7) 10%, rgba(54, 83, 20, 0.7) 30%, rgba(54, 83, 20, 0.9) 60%);
+}
+
+/* responsive */
+@media screen and (max-width: 1023px) {
+    .middle-content-right-part {
+        width: 100%;
+    }
+
+    .below-map-content-height {
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Works in WebKit (Chrome, Safari) and Blink (Opera) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #a096967b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+    height: 20px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 15px;
+    background: linear-gradient(135deg,
+            green 0%,
+            yellow 35%,
+            orange 60%,
+            red 75%);
+    outline: none;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    width: 0;
+    height: 0;
+    /* border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid black; */
+    width: 10px;
+    height: 15px;
+    background-color: black;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}

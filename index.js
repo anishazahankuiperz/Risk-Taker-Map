@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuBtn = document.getElementById("menu-btn");
   const menuContent = document.getElementById("menu-content");
   const closeIcon = document.getElementById("close-icon");
-  const menuItem = document.getElementById("menu-height");
+  const menuItem = document.getElementsByClassName("menu-height");
 
   // menuContent.style.display = "block";
 
