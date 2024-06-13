@@ -8,418 +8,374 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../style.css" />
-    <!-- <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
-          },
-        },
-      };
-    </script> -->
-
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <link rel="stylesheet" href="style2.css" />
   </head>
   <body>
-    <div class="h-screen max-h-screen relative">
-      <!-- top-content -->
-      <div class="flex w-full top">
-        <!-- ---left content-- -->
+    <div class="main-container relative relative">
+      <!-- responsive header -->
+      <div
+        class="responsive-header px-6 bg-custom-yellow flex space-x-2 items-center lg:hidden top-0 w-full fixed z-30"
+      >
+        <div class="flex items-center text-black">
+          <button class="text-sm 2xl:text-xl">
+            <i class="fas fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="text-sm 2xl:text-xl">
+            <i class="fas fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+        <p class="uppercase text-sm font-semibold">UKRAINE RESPONSE</p>
+      </div>
+      <header class="hidden lg:flex">
         <div
-          class="w-24 xl:w-28 bg-gray overflow-y-auto h-full overflow-x-hidden hidden md:block"
+          class="header-left bg-custom-yellow flex justify-center items-center"
+        >
+          <button class="text-2xl">
+            <i class="fas fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="text-2xl">
+            <i class="fas fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+        <div
+          class="flex justify-between h-full items-center header-right px-8 md:px-12"
+        >
+          <div class="flex space-x-3 md:space-x-5 items-center">
+            <p
+              class="text-sm md:text-base uppercase text-gray-200 font-semibold"
+            >
+              UKRAINE
+            </p>
+            <p style="width: 2px" class="h-5 md:h-7 bg-gray"></p>
+            <p class="text-sm md:text-base uppercase amber-color font-semibold">
+              TRAVEL RISK MANAGEMENT PORTAL
+            </p>
+          </div>
+          <p class="text-sm md:text-base uppercase text-gray-200 font-semibold">
+            BY <span class="amber-color">INHERENT RISKS</span>
+          </p>
+        </div>
+      </header>
+
+      <!-- middle content -->
+      <div class="middle-content-third-page flex z-10">
+        <div
+          class="middle-content-left-menu bg-gray flex-col justify-between overflow-hidden hidden lg:flex"
+        >
+          <a
+            href="index.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-compass"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              UKRAINE <br />
+              RISK MAP
+            </p>
+          </a>
+
+          <!-- menu number -2  -->
+          <a
+            href="FlashAlerts.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-circle-notch"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              FLASH <br />
+              Alerts
+            </p>
+          </a>
+          <!-- menu number -3  -->
+          <a
+            href="HighRisk.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-umbrella"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              HIGH-RISK <br />
+              (RE)INSURANCE
+            </p>
+          </a>
+          <!-- menu number -4  -->
+          <a
+            href="CountryProfile.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-book-open"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              Country <br />
+              profile
+            </p>
+          </a>
+          <!-- menu number -5  -->
+          <a
+            href="TravelHealth.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-notes-medical"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              travel <br />
+              health
+            </p>
+          </a>
+          <!-- menu number -6  -->
+          <a
+            href="TravelRisk.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-notes-medical"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              travel-RISK <br />
+              advisory
+            </p>
+          </a>
+          <!-- menu number -7  -->
+          <a
+            href="EmbassyFinder.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-building"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              embassy <br />
+              finder
+            </p>
+          </a>
+          <!-- menu number -8  -->
+          <a
+            style="border-left: 6px solid yellow"
+            href="ItineraryTraking.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-globe"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              ITINERARY <br />
+              TRACKING
+            </p>
+          </a>
+          <!-- menu number -9 -->
+          <a
+            href="WarRisk.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-clock"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              war risk(s) <br />
+              data
+            </p>
+          </a>
+          <!-- menu number -10-->
+          <a
+            href="HelpDesk.html"
+            class="flex flex-col items-center justify-center w-full h-full text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-hospital-user"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              24/7 <br />
+              support
+            </p>
+          </a>
+        </div>
+        <div
+          class="middle-content-right-part h-full flex flex-col-reverse lg:flex-row overflow-x-hidden bg-white z-10"
         >
           <div
-            class="flex items-center bg-custom-yellow text-black justify-center w-full menu-height"
+            class="right-itinary-inner-width bg-custom-yellow lg:overflow-y-auto py-10 md:pt-16 pb-20 pl-5 xl:pl-10 pr-6 h-full mt-5 lg:mt-0"
           >
-            <!-- <img
-          class="w-full h-full bg-custom-teal"
-          src="./image/icon.jpg"
-          alt=""
-        /> -->
-            <button class="text-2xl">
-              <i class="fas fa-solid fa-chevron-left"></i>
-            </button>
-            <button class="text-2xl">
-              <i class="fas fa-solid fa-chevron-right"></i>
-            </button>
+            <p class="text-2xl font-bold">Itinerary Tracking…</p>
+            <p class="text-gray-600">(including 24/7 Safety Check-in)</p>
+            <p class="text-sm font-semibold py-4">
+              Enabling employers to fulfil their moral and legal, duty of care
+              obligations to their travelling staff.
+            </p>
+            <p class="text-sm text-gray-600">
+              Based on our experience of tracking thousands of trips across
+              Ukraine, Inherent Risks has developed an accurate and holistic
+              tracking solution that is fit-for-purpose and is effective even
+              when others fail.
+            </p>
+            <p class="text-gray-600 text-sm py-4">
+              Seeing these
+              <span class="font-semibold">duty of care</span> and
+              <span class="font-semibold">travel risk management</span>
+              failures reported time and again, we worked closely with clients’
+              to understand their frustrations, set expectations, and develop a
+              solution that is proven to work across Ukraine, based on several
+              data points, including passive and active tracking.
+            </p>
+            <p class="text-gray-600 text-sm">
+              Our medical and security experts maintain an intelligence-led and
+              data-driven
+              <span class="font-semibold">Ukraine Risk Map</span> which
+              accurately plots key points of interest, security and safety
+              incidents, health epidemics, travel disruptions and live Member
+              locations throughout Ukraine, and its surrounding borders.
+            </p>
+            <p class="text-gray-600 text-sm py-4">
+              If an incident, threat or disruption occurs, a proactive,
+              locationspecific, and human-verified Alert is sent to Members, via
+              email or message, with an immediate Advisory which recommends the
+              relevant actions to take to mitigate any risk to life and health..
+            </p>
+            <p class="text-sm font-semibold pb-5 text-gray-800">
+              Individual and group trips are monitored 24/7 by qualified and
+              experienced, medical and security operations staff.
+            </p>
           </div>
-          <div class="">
-            <!-- menu number -1  -->
-            <a
-              href="index.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-height menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-compass"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                UKRAINE RISK MAP
-              </p>
-            </a>
-            <!-- menu number -2  -->
-            <a
-              href="FlashAlerts.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-height menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-circle-notch"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                FLASH Alerts
-              </p>
-            </a>
-            <!-- menu number -3  -->
-            <a
-              href="HighRisk.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-height menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-umbrella"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                HIGH-RISK (RE)INSURANCE
-              </p>
-            </a>
-            <!-- menu number -4  -->
-            <a
-              href="CountryProfile.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-book-open"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                Country profile
-              </p>
-            </a>
-            <!-- menu number -5 -->
-            <a
-              href="TravelHealth.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-notes-medical"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                travel health
-              </p>
-            </a>
-            <!-- menu number -6 -->
-            <a
-              href="TravelRisk.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-notes-medical"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                travel-RISK advisory
-              </p>
-            </a>
-            <!-- menu number -7 -->
-            <a
-              href="EmbassyFinder.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-building"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                embassy finder
-              </p>
-            </a>
-            <!-- menu number -8 -->
-            <a
-              href="ItineraryTraking.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-item bg-active-border"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-globe"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                ITINERARY TRACKING
-              </p>
-            </a>
-            <!-- menu number -9 -->
-            <a
-              href="WarRisk.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-clock"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                war risk data
-              </p>
-            </a>
-            <!-- menu number -10 -->
-            <a
-              href="HelpDesk.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-hospital-user"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                24/7 support
-              </p>
-            </a>
-          </div>
-        </div>
-
-        <!-- ---right content-- -->
-        <div class="w-full right-bg h-full">
-          <!-- responsive header -->
           <div
-            class="responsive-header px-6 bg-custom-yellow flex space-x-2 items-center md:hidden top-0 absolute w-full fixed z-30"
+            class="left-itinary-inner-width h-full lg:overflow-y-auto py-10 md:pt-16 lg:pb-20 pl-5 xl:pl-10 pr-6 h-full mt-5 lg:mt-0"
           >
-            <div class="flex items-center text-black">
-              <button class="text-xl">
-                <i class="fas fa-solid fa-chevron-left"></i>
-              </button>
-              <button class="text-xl">
-                <i class="fas fa-solid fa-chevron-right"></i>
-              </button>
-            </div>
-            <p class="uppercase text-sm font-semibold">UKRAINE RESPONSE</p>
-          </div>
-          <!-- large device header -->
-          <header class="menu-height w-full px-8 md:px-12 hidden md:block">
-            <div class="flex justify-between h-full items-center">
-              <div class="flex space-x-3 md:space-x-5 items-center">
-                <p
-                  class="text-sm md:text-base uppercase text-gray-200 font-semibold"
-                >
-                  UKRAINE
-                </p>
-                <p style="width: 2px" class="h-5 md:h-7 bg-gray"></p>
-                <p
-                  class="text-sm md:text-base uppercase amber-color font-semibold"
-                >
-                  TRAVEL RISK MANAGEMENT PORTAL
+            <p class="text-2xl font-bold">Safety Check-In…</p>
+            <p class="text-gray-600">(Unlimited, Multi-Trip Check-Ins)</p>
+            <p class="text-sm text-gray-500 py-5">
+              <span class="font-semibold text-slate">Clients’ </span> can
+              register their trip online, or via their travel administrator. A
+              link detailing how to do this will be emailed to you upon purchase
+              of our Membership, or as an insurance policyholder with the
+              Underwriters’ that Inherent Risks are retained by.
+            </p>
+            <p class="text-sm text-gray-500">
+              Inherent Risks works with each organisation and individual to find
+              a solution that fits their operational requirements, while also
+              respecting and adhering to operational security requirements.
+              While the option to ‘Check-In’ is provided, for multiple trips per
+              day if required, it is also not a necessity. We work with foreign
+              governments, defence contractors, war crimes investigators,
+              journalists, NGOs and and visiting dignitaries to name a few. We
+              understand the need for confidentiality, especially in such a
+              challenging environment as Ukraine.
+            </p>
+            <p class="text-sm text-gray-500 py-5">
+              Our end-to-end Travel Tracking and Safety Check-In service enables
+              organisations to ensure that trips are monitored, dangers and
+              disruptions are alerted, calls for help are answered, and to
+              ensure compliance with travel policies, warnings are issued when
+              employees travel outside an agreed risk parameter.
+            </p>
+            <p
+              style="border: 0.2px solid rgba(128, 128, 128, 0.733)"
+              class="w-full border-gray-700"
+            ></p>
+            <p class="py-5 text-2xl font-bold">Features…</p>
+            <div class="space-y-1">
+              <div class="flex space-x-3 items-center">
+                <img
+                  class="w-3 h-3"
+                  src="../image/check-removebg-preview.png"
+                  alt=""
+                />
+
+                <p class="text-sm font-medium">
+                  Trip Departure and Arrival Monitoring
                 </p>
               </div>
-              <p
-                class="text-sm md:text-base uppercase text-gray-200 font-semibold"
+              <div class="flex space-x-3 items-center">
+                <img
+                  class="w-3 h-3"
+                  src="../image/check-removebg-preview.png"
+                  alt=""
+                />
+                <p class="text-sm font-medium">Projected Journey Timings</p>
+              </div>
+              <div class="flex space-x-3 items-center">
+                <img
+                  class="w-3 h-3"
+                  src="../image/check-removebg-preview.png"
+                  alt=""
+                />
+                <p class="text-sm font-medium">
+                  Itinerary Segments (Hotel/Transportation)
+                </p>
+              </div>
+              <div class="flex space-x-3 items-center">
+                <img
+                  class="w-3 h-3"
+                  src="../image/check-removebg-preview.png"
+                  alt=""
+                />
+                <p class="text-sm font-medium">
+                  Geolocation (Satellite GPS Tracking)
+                </p>
+              </div>
+              <div class="flex space-x-3 items-center">
+                <img
+                  class="w-3 h-3"
+                  src="../image/check-removebg-preview.png"
+                  alt=""
+                />
+                <p class="text-sm font-medium">
+                  Incident Monitoring & Alerts
+                  (Security/Weather/Pandemics/Natural Disasters)
+                </p>
+              </div>
+              <div class="flex space-x-3 items-center">
+                <img
+                  class="w-3 h-3"
+                  src="../image/check-removebg-preview.png"
+                  alt=""
+                />
+                <p class="text-sm font-medium">
+                  Safety Check-ins (via Encrypted Messaging Apps or Satellite
+                  Communications)
+                </p>
+              </div>
+            </div>
+            <div class="flex space-x-2 items-center mt-3">
+              <p class="text-gray-500 text-sm py-4">
+                To learn more about our services, email:
+              </p>
+              <a
+                class="font-bold text-xs text-white py-2 px-6 text-yellow rounded-full bg-slate"
+                href=""
+                >support@inherentrisk.com</a
               >
-                BY <span class="amber-color">INHERENT RISKS</span>
-              </p>
             </div>
-          </header>
-          <!-- below header content -->
-
-          <div
-            class="w-full itinary-inner-content-height height-for-small overflow-y-auto lg:overflow-hidden flex flex-col-reverse lg:flex-row overflow-x-hidden z-10"
-          >
-            <div
-              class="left-itinary-inner-width bg-custom-yellow lg:overflow-y-auto py-16 pl-10 pr-6 z-20"
-            >
-              <p class="text-2xl font-bold">Itinerary Tracking…</p>
-              <p class="text-gray-600">(including 24/7 Safety Check-in)</p>
-              <p class="text-sm font-bold py-4">
-                Enabling employers to fulfil their moral and legal, duty of care
-                obligations to their travelling staff.
-              </p>
-              <p class="text-sm text-gray-600">
-                Based on our experience of tracking thousands of trips across
-                Ukraine, Inherent Risks has developed an accurate and holistic
-                tracking solution that is fit-for-purpose and is effective even
-                when others fail.
-              </p>
-              <p class="text-gray-600 text-sm py-4">
-                Seeing these
-                <span class="font-semibold">duty of care</span> and
-                <span class="font-semibold">travel risk management</span>
-                failures reported time and again, we worked closely with
-                clients’ to understand their frustrations, set expectations, and
-                develop a solution that is proven to work across Ukraine, based
-                on several data points, including passive and active tracking.
-              </p>
-              <p class="text-gray-600 text-sm">
-                Our medical and security experts maintain an intelligence-led
-                and data-driven
-                <span class="font-semibold">Ukraine Risk Map</span> which
-                accurately plots key points of interest, security and safety
-                incidents, health epidemics, travel disruptions and live Member
-                locations throughout Ukraine, and its surrounding borders.
-              </p>
-              <p class="text-gray-600 text-sm py-4">
-                If an incident, threat or disruption occurs, a proactive,
-                locationspecific, and human-verified Alert is sent to Members,
-                via email or message, with an immediate Advisory which
-                recommends the relevant actions to take to mitigate any risk to
-                life and health..
-              </p>
-              <p class="text-sm font-bold pb-5 text-gray-800">
-                Individual and group trips are monitored 24/7 by qualified and
-                experienced, medical and security operations staff.
-              </p>
-            </div>
-            <div
-              class="right-itinary-inner-width py-16 px-8 mr-3 z-20 lg:overflow-y-auto"
-            >
-              <p class="text-2xl font-bold">Safety Check-In…</p>
-              <p class="text-gray-600">(Unlimited, Multi-Trip Check-Ins)</p>
-              <p class="text-sm text-gray-500 py-5">
-                <span class="font-semibold text-slate">Clients’ </span> can
-                register their trip online, or via their travel administrator. A
-                link detailing how to do this will be emailed to you upon
-                purchase of our Membership, or as an insurance policyholder with
-                the Underwriters’ that Inherent Risks are retained by.
-              </p>
-              <p class="text-sm text-gray-500">
-                Inherent Risks works with each organisation and individual to
-                find a solution that fits their operational requirements, while
-                also respecting and adhering to operational security
-                requirements. While the option to ‘Check-In’ is provided, for
-                multiple trips per day if required, it is also not a necessity.
-                We work with foreign governments, defence contractors, war
-                crimes investigators, journalists, NGOs and and visiting
-                dignitaries to name a few. We understand the need for
-                confidentiality, especially in such a challenging environment as
-                Ukraine.
-              </p>
-              <p class="text-sm text-gray-500 py-5">
-                Our end-to-end Travel Tracking and Safety Check-In service
-                enables organisations to ensure that trips are monitored,
-                dangers and disruptions are alerted, calls for help are
-                answered, and to ensure compliance with travel policies,
-                warnings are issued when employees travel outside an agreed risk
-                parameter.
-              </p>
-              <p
-                style="border: 0.2px solid rgba(128, 128, 128, 0.733)"
-                class="w-full border-gray-700"
-              ></p>
-              <p class="py-5 text-2xl font-bold">Features…</p>
-              <div class="space-y-1">
-                <div class="flex space-x-3 items-center">
-                  <img
-                    class="w-3 h-3"
-                    src="../image/check-removebg-preview.png"
-                    alt=""
-                  />
-
-                  <p class="text-sm font-medium">
-                    Trip Departure and Arrival Monitoring
-                  </p>
-                </div>
-                <div class="flex space-x-3 items-center">
-                  <img
-                    class="w-3 h-3"
-                    src="../image/check-removebg-preview.png"
-                    alt=""
-                  />
-                  <p class="text-sm font-medium">Projected Journey Timings</p>
-                </div>
-                <div class="flex space-x-3 items-center">
-                  <img
-                    class="w-3 h-3"
-                    src="../image/check-removebg-preview.png"
-                    alt=""
-                  />
-                  <p class="text-sm font-medium">
-                    Itinerary Segments (Hotel/Transportation)
-                  </p>
-                </div>
-                <div class="flex space-x-3 items-center">
-                  <img
-                    class="w-3 h-3"
-                    src="../image/check-removebg-preview.png"
-                    alt=""
-                  />
-                  <p class="text-sm font-medium">
-                    Geolocation (Satellite GPS Tracking)
-                  </p>
-                </div>
-                <div class="flex space-x-3 items-center">
-                  <img
-                    class="w-3 h-3"
-                    src="../image/check-removebg-preview.png"
-                    alt=""
-                  />
-                  <p class="text-sm font-medium">
-                    Incident Monitoring & Alerts
-                    (Security/Weather/Pandemics/Natural Disasters)
-                  </p>
-                </div>
-                <div class="flex space-x-3 items-center">
-                  <img
-                    class="w-3 h-3"
-                    src="../image/check-removebg-preview.png"
-                    alt=""
-                  />
-                  <p class="text-sm font-medium">
-                    Safety Check-ins (via Encrypted Messaging Apps or Satellite
-                    Communications)
-                  </p>
-                </div>
-              </div>
-              <div class="flex space-x-2 items-center mt-3">
-                <p class="text-gray-500 text-sm py-4">
-                  To learn more about our services, email:
-                </p>
-                <a
-                  class="font-bold text-xs text-white py-2 px-6 text-yellow rounded-full bg-slate"
-                  href=""
-                  >support@inherentrisk.com</a
-                >
-              </div>
-              <p
-                style="border: 0.2px solid rgba(128, 128, 128, 0.733)"
-                class="w-full border-gray-400 mt-3"
-              ></p>
-              <p class="text-sm italic text-gray-500 my-5">
-                nherent Risks works in the best interest of the policyholder.
-              </p>
-            </div>
+            <p
+              style="border: 0.2px solid rgba(128, 128, 128, 0.733)"
+              class="w-full border-gray-400 mt-3"
+            ></p>
+            <p class="text-sm italic text-gray-500 my-5">
+              nherent Risks works in the best interest of the policyholder.
+            </p>
           </div>
         </div>
       </div>
-
-      <!-- footer-content -->
-
-      <div class="hidden xl:block absolute bottom-10 z-20 bottom-btn">
+      <!-- footer content -->
+      <div class="hidden xl:block absolute z-20 bottom-btn">
         <button
           class="bg-gray text-sm font-medium py-2 px-4 rounded-tl-xl rounded-tr-xl text-gray-600"
         >
           Disclaimer
         </button>
       </div>
-
       <footer
-        class="flex justify-start items-center w-full bg-gray bottom-0 absolute hidden md:block"
+        class="lg:flex absolute bottom-0 justify-start items-center w-full bg-gray hidden"
       >
         <h2
           class="text-sm text-gray-900 pl-20 lg:pl-24 xl:pl-28 flex justify-start items-center h-full"
@@ -431,14 +387,13 @@
       <!-- for responsive bottom menu -->
       <div
         id="menu-btn"
-        class="bg-slate py-2 text-white absolute bottom-3 fixed right-4 flex items-center justify-end px-3 md:hidden rounded z-30"
+        class="bg-slate py-2 text-white fixed bottom-3 right-4 flex items-center justify-end px-3 lg:hidden rounded z-20"
       >
         <i class="material-icons text-yellow">menu</i>
       </div>
-
       <div
         id="menu-content"
-        class="bg-slate pt-3 pb-8 w-full text-white absolute bottom-0 hidden z-30"
+        class="bg-slate pt-3 pb-8 w-full text-white fixed bottom-0 hidden z-30"
       >
         <p
           id="close-icon"
@@ -465,6 +420,7 @@
               UKRAINE RISK MAP
             </p>
           </a>
+
           <!-- menu number -2  -->
           <a
             href="FlashAlerts.html"
@@ -526,7 +482,8 @@
             </p>
           </a>
           <!-- menu number -7 -->
-          <div
+          <a
+            href="EmbassyFinder.html"
             class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-600 text-yellow aside-menu cursor-pointer"
           >
             <button class="text-3xl">
@@ -535,10 +492,10 @@
             <p class="small-text uppercase font-semibold text-center mt-1 px-2">
               embassy finder
             </p>
-          </div>
+          </a>
           <!-- menu number -8 -->
           <a
-            style="border-left: 5px solid #f5f509"
+            style="border-left: 6px solid #f5f509"
             href="ItineraryTraking.html"
             class="flex flex-col items-center justify-center w-full menu-height border border-gray-600 text-yellow aside-menu cursor-pointer"
           >

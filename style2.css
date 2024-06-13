@@ -108,6 +108,24 @@ footer {
 
 }
 
+.display-hidden {
+    display: none;
+}
+
+.top-help {
+    height: 70%;
+}
+
+.bottom-help {
+    height: 20%;
+    background: linear-gradient(#003138d0, #003138d0), url("./image/bg.jpg");
+    background-size: cover;
+}
+
+.empty-space-help {
+    height: 10%
+}
+
 /* 1st page */
 .map {
     height: 60%;
@@ -186,6 +204,19 @@ footer {
     .right-itinary-inner-width {
         width: 100%;
         height: auto;
+    }
+
+
+    .top-help {
+        height: auto;
+    }
+
+    .bottom-help {
+        height: auto;
+    }
+
+    .empty-space-help {
+        display: none;
     }
 }
 

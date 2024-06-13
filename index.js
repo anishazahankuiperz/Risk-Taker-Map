@@ -294,7 +294,7 @@ if (mainContainer3) {
 
     const img = document.createElement("img");
     img.src = item.img;
-    img.className = "w-10 h-6";
+    img.className = "w-10 h-6 object-cover";
 
     const dataP = document.createElement("p");
     dataP.className = "text-sm p-3 display-hidden";
