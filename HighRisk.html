@@ -3,811 +3,764 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hight Risk</title>
+    <title>High Risk</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../style.css" />
-    <!-- <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
-          },
-        },
-      };
-    </script> -->
-
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <link rel="stylesheet" href="style2.css" />
   </head>
   <body>
-    <div class="h-screen max-h-screen relative">
-      <!-- top-content -->
-      <div class="flex w-full top">
-        <!-- ---left content-- -->
-        <div
-          class="w-24 xl:w-28 bg-gray overflow-y-auto h-full overflow-x-hidden hidden md:block"
-        >
-          <div
-            class="flex items-center bg-custom-yellow text-black justify-center w-full menu-height"
-          >
-            <!-- <img
-          class="w-full h-full bg-custom-teal"
-          src="./image/icon.jpg"
-          alt=""
-        /> -->
-            <button class="text-2xl">
-              <i class="fas fa-solid fa-chevron-left"></i>
-            </button>
-            <button class="text-2xl">
-              <i class="fas fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
-          <div class="">
-            <!-- menu number -1  -->
-            <a
-              href="index.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-height menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-compass"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                UKRAINE RISK MAP
-              </p>
-            </a>
-            <!-- menu number -2  -->
-            <a
-              href="FlashAlerts.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-height menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-circle-notch"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                FLASH Alerts
-              </p>
-            </a>
-            <!-- menu number -3  -->
-            <a
-              href="HighRisk.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-height menu-item bg-active-border"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-umbrella"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                HIGH-RISK (RE)INSURANCE
-              </p>
-            </a>
-            <!-- menu number -4  -->
-            <a
-              href="CountryProfile.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-book-open"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                Country profile
-              </p>
-            </a>
-            <!-- menu number -5 -->
-            <a
-              href="TravelHealth.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-notes-medical"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                travel health
-              </p>
-            </a>
-            <!-- menu number -6 -->
-            <a
-              href="TravelRisk.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-notes-medical"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                travel-RISK advisory
-              </p>
-            </a>
-            <!-- menu number -7 -->
-            <a
-              href="EmbassyFinder.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-building"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                embassy finder
-              </p>
-            </a>
-            <!-- menu number -8 -->
-            <a
-              href="ItineraryTraking.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-globe"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                ITINERARY TRACKING
-              </p>
-            </a>
-            <!-- menu number -9 -->
-            <a
-              href="WarRisk.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-clock"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                war risk data
-              </p>
-            </a>
-            <!-- menu number -10 -->
-            <a
-              href="HelpDesk.html"
-              class="flex flex-col items-center justify-center w-full menu-height border-b border-gray text-black aside-menu cursor-pointer py-1 menu-item"
-            >
-              <button class="text-2xl">
-                <i class="fas fa-solid fa-hospital-user"></i>
-              </button>
-              <p
-                class="small-text uppercase font-semibold text-center mt-1 px-2"
-              >
-                24/7 support
-              </p>
-            </a>
-          </div>
+    <div class="main-container relative relative">
+      <!-- responsive header -->
+      <div
+        class="responsive-header px-6 bg-custom-yellow flex space-x-2 items-center lg:hidden top-0 w-full fixed z-30"
+      >
+        <div class="flex items-center text-black">
+          <button class="text-sm 2xl:text-xl">
+            <i class="fas fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="text-sm 2xl:text-xl">
+            <i class="fas fa-solid fa-chevron-right"></i>
+          </button>
         </div>
-
-        <!-- ---right content-- -->
-        <div class="w-full right-bg h-full">
-          <!-- responsive header -->
-          <div
-            class="responsive-header px-6 bg-custom-yellow flex space-x-2 items-center md:hidden top-0 absolute w-full fixed z-30"
-          >
-            <div class="flex items-center text-black">
-              <button class="text-xl">
-                <i class="fas fa-solid fa-chevron-left"></i>
-              </button>
-              <button class="text-xl">
-                <i class="fas fa-solid fa-chevron-right"></i>
-              </button>
-            </div>
-            <p class="uppercase text-sm font-semibold">UKRAINE RESPONSE</p>
-          </div>
-          <!-- large device header -->
-          <header class="menu-height w-full px-8 md:px-12 hidden md:block">
-            <div class="flex justify-between h-full items-center">
-              <div class="flex space-x-3 md:space-x-5 items-center">
-                <p
-                  class="text-sm md:text-base uppercase text-gray-200 font-semibold"
-                >
-                  UKRAINE
-                </p>
-                <p style="width: 2px" class="h-5 md:h-7 bg-gray"></p>
-                <p
-                  class="text-sm md:text-base uppercase amber-color font-semibold"
-                >
-                  TRAVEL RISK MANAGEMENT PORTAL
-                </p>
-              </div>
-              <p
-                class="text-sm md:text-base uppercase text-gray-200 font-semibold"
-              >
-                BY <span class="amber-color">INHERENT RISKS</span>
-              </p>
-            </div>
-          </header>
-          <!-- below header content -->
-
-          <div
-            class="w-full itinary-inner-content-height height-for-small overflow-y-auto lg:overflow-hidden flex flex-col lg:flex-row overflow-x-hidden z-10"
-          >
-            <div class="right-itinary-inner-width z-20 lg:overflow-y-auto">
-              <div class="pt-10 md:pt-16 pl-5 2xl:pl-14 pr-10 pb-8">
-                <p class="text-3xl font-bold text-slate">
-                  Medical/Crisis Options
-                  <span class="font-bold text-xl text-gray-700"
-                    >(including War & Terrorism Cover)</span
-                  >
-                </p>
-                <p class="text-sm text-gray-500 pt-5">
-                  Choose between
-                  <span class="text-gray-600 font-semibold"
-                    >Medical Evacuation</span
-                  >
-                  only, or purchase a
-                  <span class="text-gray-600 font-semibold"
-                    >Crisis Response</span
-                  >
-                  add-on for an additional affordable fee per person, per day.
-                </p>
-                <p class="text-sm text-gray-500 py-5">
-                  Membership is available in the Green, Orange and Red Zone(s),
-                  but NOT in the Black Zone. To confirm which Zone You will be
-                  traveling in, check the live
-                  <span class="text-gray-600 font-semibold">
-                    Ukraine Risk Map </span
-                  >tab on the left.
-                </p>
-                <p class="text-2xl font-bold text-slate mb-6">
-                  How we compare…
-                </p>
-                <!-- table -->
-
-                <!-- <div
-                  class="flex w-full gap-10 flex-col items-center justify-center lg:flex-row"
-                > -->
-                <!-- Item -->
-                <div class="bg-gray-200 overflow-x-auto">
-                  <table class="">
-                    <thead class="border-b border-white">
-                      <tr class="yellow-gradient border-b border-white">
-                        <th
-                          colspan="2"
-                          class="py-3 text-sm border-r border-t font-semibold text-slate text-left pl-6"
-                        >
-                          Benefits
-                        </th>
-                        <th
-                          class="py-3 text-sm border-r font-semibold text-white text-center"
-                        >
-                          Benefits
-                        </th>
-                        <th
-                          class="py-3 text-sm border-r font-semibold text-white flex space-x-1 items-center justify-center px-2"
-                        >
-                          <button class="">
-                            <i class="fas fa-solid fa-chevron-left"></i>
-                          </button>
-                          <button class="">
-                            <i class="fas fa-solid fa-chevron-right"></i>
-                          </button>
-                          <span class="">Ukraine Response</span>
-                        </th>
-                        <th
-                          class="py-3 text-sm font-semibold text-white text-center"
-                        >
-                          Most Insurance
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="border-b border-white">
-                        <td
-                          colspan="2"
-                          class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
-                        >
-                          <p class="text-sm font-semibold">
-                            Intelligence-led Risk Map
-                          </p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 border-r border-white text-center"
-                        >
-                          <p class="text-sm font-semibold">Included</p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 text-center border-r border-white flex justify-center"
-                        >
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/check-removebg-preview.png"
-                            alt="check"
-                          />
-                        </td>
-                        <td class="py-3 md:px-6">
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/close.png"
-                            alt="check"
-                          />
-                        </td>
-                      </tr>
-                      <tr class="border-b border-white">
-                        <td
-                          colspan="2"
-                          class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
-                        >
-                          <p class="text-sm font-semibold">
-                            Pre-Travel Safety Brief
-                          </p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 border-r border-white text-center"
-                        >
-                          <p class="text-sm font-semibold">Included</p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 text-center border-r border-white flex justify-center"
-                        >
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/check-removebg-preview.png"
-                            alt="check"
-                          />
-                        </td>
-                        <td class="py-3 md:px-6">
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/close.png"
-                            alt="check"
-                          />
-                        </td>
-                      </tr>
-                      <tr class="border-b border-white">
-                        <td
-                          colspan="2"
-                          class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
-                        >
-                          <p class="text-sm font-semibold">
-                            Itinerary Tracking
-                          </p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 border-r border-white text-center"
-                        >
-                          <p class="text-sm font-semibold">Unlimited</p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 text-center border-r border-white flex justify-center"
-                        >
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/check-removebg-preview.png"
-                            alt="check"
-                          />
-                        </td>
-                        <td class="py-3 md:px-6">
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/close.png"
-                            alt="check"
-                          />
-                        </td>
-                      </tr>
-                      <tr class="border-b border-white">
-                        <td
-                          colspan="2"
-                          class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
-                        >
-                          <p class="text-sm font-semibold">
-                            Location Specific Incident Alerts
-                          </p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 border-r border-white text-center"
-                        >
-                          <p class="text-sm font-semibold">Unlimited</p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 text-center border-r border-white flex justify-center"
-                        >
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/check-removebg-preview.png"
-                            alt="check"
-                          />
-                        </td>
-                        <td class="py-3 md:px-6">
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/close.png"
-                            alt="check"
-                          />
-                        </td>
-                      </tr>
-                      <tr class="border-b border-white">
-                        <td
-                          colspan="2"
-                          class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
-                        >
-                          <p class="text-sm font-semibold">Safety Check-In</p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 border-r border-white text-center"
-                        >
-                          <p class="text-sm font-semibold">Unlimited</p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 text-center border-r border-white flex justify-center"
-                        >
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/check-removebg-preview.png"
-                            alt="check"
-                          />
-                        </td>
-                        <td class="py-3 md:px-6">
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/close.png"
-                            alt="check"
-                          />
-                        </td>
-                      </tr>
-                      <tr class="border-b border-white">
-                        <td
-                          colspan="2"
-                          class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
-                        >
-                          <p class="text-sm font-semibold">
-                            Medical Network Access
-                          </p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 border-r border-white text-center"
-                        >
-                          <p class="text-sm font-semibold">Included</p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 text-center border-r border-white flex justify-center"
-                        >
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/check-removebg-preview.png"
-                            alt="check"
-                          />
-                        </td>
-                        <td class="py-3 md:px-6">
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/close.png"
-                            alt="check"
-                          />
-                        </td>
-                      </tr>
-                      <tr class="border-b border-white">
-                        <td
-                          colspan="2"
-                          class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
-                        >
-                          <p class="text-sm font-semibold">In-Country Teams</p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 border-r border-white text-center"
-                        >
-                          <p class="text-sm font-semibold">Included</p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 text-center border-r border-white flex justify-center"
-                        >
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/check-removebg-preview.png"
-                            alt="check"
-                          />
-                        </td>
-                        <td class="py-3 md:px-6">
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/close.png"
-                            alt="check"
-                          />
-                        </td>
-                      </tr>
-                      <tr class="border-b border-white">
-                        <td
-                          colspan="2"
-                          class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
-                        >
-                          <p class="text-sm font-semibold">
-                            24/7 Medical Help Desk
-                          </p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 border-r border-white text-center"
-                        >
-                          <p class="text-sm font-semibold">Unlimited Calls</p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 text-center border-r border-white flex justify-center"
-                        >
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/check-removebg-preview.png"
-                            alt="check"
-                          />
-                        </td>
-                        <td class="py-3 md:px-6">
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/close.png"
-                            alt="check"
-                          />
-                        </td>
-                      </tr>
-                      <tr class="">
-                        <td
-                          colspan="2"
-                          class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
-                        >
-                          <p class="text-sm font-semibold">
-                            Medical Expenses, Evacuation & Repatriation Home
-                          </p>
-                        </td>
-                        <td
-                          class="py-3 border-r border-white md:px-6 text-center"
-                        >
-                          <p class="text-sm font-semibold">$250,000</p>
-                        </td>
-                        <td
-                          class="py-3 border-r border-white md:px-6 text-center flex justify-center"
-                        >
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/check-removebg-preview.png"
-                            alt="check"
-                          />
-                        </td>
-                        <td class="py-3 md:px-6">
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/close.png"
-                            alt="check"
-                          />
-                        </td>
-                      </tr>
-                      <tr class="border-b border-white">
-                        <td
-                          colspan="2"
-                          class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
-                        >
-                          <p class="text-sm font-semibold">
-                            24/7 Crisis Help Desk
-                          </p>
-                        </td>
-                        <td
-                          class="py-3 border-r border-white md:px-6 text-center"
-                        >
-                          <p class="text-sm font-semibold">Unlimited Calls</p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 border-r border-white text-center flex justify-center"
-                        >
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/check-removebg-preview.png"
-                            alt="check"
-                          />
-                        </td>
-                        <td class="py-3 md:px-6">
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/close.png"
-                            alt="check"
-                          />
-                        </td>
-                      </tr>
-                      <tr class="border-b border-white">
-                        <td
-                          colspan="2"
-                          class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
-                        >
-                          <p class="text-sm font-semibold">
-                            Security Evacuation
-                          </p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 border-r border-white text-center"
-                        >
-                          <p class="text-sm font-semibold">$10,000</p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 text-center border-r border-white flex justify-center"
-                        >
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/check-removebg-preview.png"
-                            alt="check"
-                          />
-                        </td>
-                        <td class="py-3 md:px-6">
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/close.png"
-                            alt="check"
-                          />
-                        </td>
-                      </tr>
-                      <tr class="">
-                        <td
-                          colspan="2"
-                          class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
-                        >
-                          <p class="text-sm font-semibold">
-                            Threat / Kidnap / Extortion Consultancy
-                          </p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 border-r border-white text-center"
-                        >
-                          <p class="text-sm font-semibold">$15,000</p>
-                        </td>
-                        <td
-                          class="py-3 md:px-6 text-center border-r border-white flex justify-center"
-                        >
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/check-removebg-preview.png"
-                            alt="check"
-                          />
-                        </td>
-                        <td class="py-3 md:px-6">
-                          <img
-                            class="w-5 mx-auto"
-                            src="../image/close.png"
-                            alt="check"
-                          />
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <!-- </div> -->
-              </div>
-            </div>
-            <div
-              class="left-itinary-inner-width bg-custom-yellow lg:overflow-y-auto py-10 md:py-16 pl-5 2xl:pl-10 pr-6 z-20"
+        <p class="uppercase text-sm font-semibold">UKRAINE RESPONSE</p>
+      </div>
+      <header class="hidden lg:flex">
+        <div
+          class="header-left bg-custom-yellow flex justify-center items-center"
+        >
+          <button class="text-2xl">
+            <i class="fas fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="text-2xl">
+            <i class="fas fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+        <div
+          class="flex justify-between h-full items-center header-right px-8 md:px-12"
+        >
+          <div class="flex space-x-3 md:space-x-5 items-center">
+            <p
+              class="text-sm md:text-base uppercase text-gray-200 font-semibold"
             >
-              <p class="text-3xl font-bold">Membership vs. Insurance</p>
-              <p class="text-xs text-gray-500 py-5">
-                In terms of coverage, benefits and policy triggers, Membership
-                works in the same way as an emergency medical, crisis and
-                evacuation insurance policy. What sets our Membership apart is
-                that it was developed by Inherent Risks, in partnership with
-                Lloyd’s underwriters, from extensive experience of providing
+              UKRAINE
+            </p>
+            <p style="width: 2px" class="h-5 md:h-7 bg-gray"></p>
+            <p class="text-sm md:text-base uppercase amber-color font-semibold">
+              TRAVEL RISK MANAGEMENT PORTAL
+            </p>
+          </div>
+          <p class="text-sm md:text-base uppercase text-gray-200 font-semibold">
+            BY <span class="amber-color">INHERENT RISKS</span>
+          </p>
+        </div>
+      </header>
+
+      <!-- middle content -->
+      <div class="middle-content-third-page flex z-10">
+        <div
+          class="middle-content-left-menu bg-gray flex-col justify-between overflow-hidden hidden lg:flex"
+        >
+          <a
+            href="index.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-compass"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              UKRAINE <br />
+              RISK MAP
+            </p>
+          </a>
+
+          <!-- menu number -2  -->
+          <a
+            style="border-left: 6px solid yellow"
+            href="FlashAlerts.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-circle-notch"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              FLASH <br />
+              Alerts
+            </p>
+          </a>
+          <!-- menu number -3  -->
+          <a
+            href="HighRisk.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-umbrella"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              HIGH-RISK <br />
+              (RE)INSURANCE
+            </p>
+          </a>
+          <!-- menu number -4  -->
+          <a
+            href="CountryProfile.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-book-open"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              Country <br />
+              profile
+            </p>
+          </a>
+          <!-- menu number -5  -->
+          <a
+            href="TravelHealth.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-notes-medical"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              travel <br />
+              health
+            </p>
+          </a>
+          <!-- menu number -6  -->
+          <a
+            href="TravelRisk.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-notes-medical"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              travel-RISK <br />
+              advisory
+            </p>
+          </a>
+          <!-- menu number -7  -->
+          <a
+            href="EmbassyFinder.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-building"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              embassy <br />
+              finder
+            </p>
+          </a>
+          <!-- menu number -8  -->
+          <a
+            href="ItineraryTraking.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-globe"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              ITINERARY <br />
+              TRACKING
+            </p>
+          </a>
+          <!-- menu number -9 -->
+          <a
+            href="WarRisk.html"
+            class="flex flex-col items-center justify-center w-full h-full border-b border-gray text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-clock"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              war risk(s) <br />
+              data
+            </p>
+          </a>
+          <!-- menu number -10-->
+          <a
+            href="HelpDesk.html"
+            class="flex flex-col items-center justify-center w-full h-full text-black"
+          >
+            <button class="text-sm 2xl:text-2xl">
+              <i class="fas fa-solid fa-hospital-user"></i>
+            </button>
+            <p class="small-text uppercase text-center px-2">
+              24/7 <br />
+              support
+            </p>
+          </a>
+        </div>
+        <div
+          class="middle-content-right-part h-full flex flex-col lg:flex-row overflow-x-hidden bg-white z-10"
+        >
+          <div class="left-itinary-inner-width h-full lg:overflow-y-auto">
+            <div
+              class="pt-10 md:pt-16 px-5 sm:px-8 md:px-12 lg:px-10 2xl:px-14 pb-8"
+            >
+              <p class="text-3xl font-bold text-slate">
+                Medical/Crisis Options
+                <span class="font-bold text-xl text-gray-700"
+                  >(including War & Terrorism Cover)</span
+                >
+              </p>
+              <p class="text-sm text-gray-500 pt-5">
+                Choose between
                 <span class="text-gray-600 font-semibold"
-                  >Travel Risk Management</span
+                  >Medical Evacuation</span
                 >
-                and
-                <span class="text-gray-600 font-semibold">Duty of Care</span>
-                services to thousands of international and local staff working
-                and volunteering in Ukraine.
+                only, or purchase a
+                <span class="text-gray-600 font-semibold">Crisis Response</span>
+                add-on for an additional affordable fee per person, per day.
               </p>
-              <p class="text-xs text-gray-500">
-                Membership can be easily purchased online, day or night, with
-                the flexibility to extend travel online for as little as one
-                day; even if you are already in Ukraine. Membership includes
-                <span class="text-gray-600 font-semibold">War & Terrorism</span>
-                cover and is not a ‘self-rescue’ policy
+              <p class="text-sm text-gray-500 py-5">
+                Membership is available in the Green, Orange and Red Zone(s),
+                but NOT in the Black Zone. To confirm which Zone You will be
+                traveling in, check the live
+                <span class="text-gray-600 font-semibold">
+                  Ukraine Risk Map </span
+                >tab on the left.
               </p>
-              <p class="text-xs text-gray-500 py-5">
-                Members can call the 24/7 emergency response phone number to
-                request assistance
-              </p>
-              <p
-                style="border: 0.2px solid rgba(128, 128, 128, 0.733)"
-                class="w-full border-gray-400"
-              ></p>
-              <p class="py-5 text-2xl font-bold">Cover is Available for…</p>
-              <div class="space-y-1">
-                <div class="flex space-x-3 items-center">
-                  <img
-                    class="w-3 h-3"
-                    src="../image/check-removebg-preview.png"
-                    alt=""
-                  />
-                  <p class="text-sm font-medium">Emergency Medical</p>
-                </div>
-                <div class="flex space-x-3 items-center">
-                  <img
-                    class="w-3 h-3"
-                    src="../image/check-removebg-preview.png"
-                    alt=""
-                  />
-                  <p class="text-sm font-medium">
-                    Personal Accident, Death & Disability
-                  </p>
-                </div>
-                <div class="flex space-x-3 items-center">
-                  <img
-                    class="w-3 h-3"
-                    src="../image/check-removebg-preview.png"
-                    alt=""
-                  />
-                  <p class="text-sm font-medium">Defense Base Act (DBA)</p>
-                </div>
-                <div class="flex space-x-3 items-center">
-                  <img
-                    class="w-3 h-3"
-                    src="../image/check-removebg-preview.png"
-                    alt=""
-                  />
-                  <p class="text-sm font-medium">Crisis Response</p>
-                </div>
-                <div class="flex space-x-3 items-center">
-                  <img
-                    class="w-3 h-3"
-                    src="../image/check-removebg-preview.png"
-                    alt=""
-                  />
-                  <p class="text-sm font-medium">
-                    Kidnap, Ransom & Extortion (KRE)
-                  </p>
-                </div>
-                <div class="flex space-x-3 items-center">
-                  <img
-                    class="w-3 h-3"
-                    src="../image/check-removebg-preview.png"
-                    alt=""
-                  />
-                  <p class="text-sm font-medium">Personal Belongings</p>
-                </div>
+              <p class="text-2xl font-bold text-slate mb-6">How we compare…</p>
+              <!-- table -->
+
+              <!-- <div
+                    class="flex w-full gap-10 flex-col items-center justify-center lg:flex-row"
+                  > -->
+              <!-- Item -->
+              <div class="bg-gray-200 overflow-x-auto w-full">
+                <table class="w-full">
+                  <thead class="border-b border-white">
+                    <tr class="yellow-gradient border-b border-white">
+                      <th
+                        colspan="2"
+                        class="py-3 text-sm border-r border-t font-semibold text-slate text-left pl-6"
+                      >
+                        Benefits
+                      </th>
+                      <th
+                        class="py-3 text-sm border-r font-semibold text-white text-center"
+                      >
+                        Benefits
+                      </th>
+                      <th
+                        class="py-3 text-sm border-r font-semibold text-white flex space-x-1 items-center justify-center px-2"
+                      >
+                        <button class="">
+                          <i class="fas fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button class="">
+                          <i class="fas fa-solid fa-chevron-right"></i>
+                        </button>
+                        <span class="">Ukraine Response</span>
+                      </th>
+                      <th
+                        class="py-3 text-sm font-semibold text-white text-center"
+                      >
+                        Most Insurance
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b border-white">
+                      <td
+                        colspan="2"
+                        class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
+                      >
+                        <p class="text-sm font-semibold">
+                          Intelligence-led Risk Map
+                        </p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 border-r border-white text-center"
+                      >
+                        <p class="text-sm font-semibold">Included</p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 text-center border-r border-white flex justify-center"
+                      >
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/check-removebg-preview.png"
+                          alt="check"
+                        />
+                      </td>
+                      <td class="py-3 md:px-6">
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/close.png"
+                          alt="check"
+                        />
+                      </td>
+                    </tr>
+                    <tr class="border-b border-white">
+                      <td
+                        colspan="2"
+                        class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
+                      >
+                        <p class="text-sm font-semibold">
+                          Pre-Travel Safety Brief
+                        </p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 border-r border-white text-center"
+                      >
+                        <p class="text-sm font-semibold">Included</p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 text-center border-r border-white flex justify-center"
+                      >
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/check-removebg-preview.png"
+                          alt="check"
+                        />
+                      </td>
+                      <td class="py-3 md:px-6">
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/close.png"
+                          alt="check"
+                        />
+                      </td>
+                    </tr>
+                    <tr class="border-b border-white">
+                      <td
+                        colspan="2"
+                        class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
+                      >
+                        <p class="text-sm font-semibold">Itinerary Tracking</p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 border-r border-white text-center"
+                      >
+                        <p class="text-sm font-semibold">Unlimited</p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 text-center border-r border-white flex justify-center"
+                      >
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/check-removebg-preview.png"
+                          alt="check"
+                        />
+                      </td>
+                      <td class="py-3 md:px-6">
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/close.png"
+                          alt="check"
+                        />
+                      </td>
+                    </tr>
+                    <tr class="border-b border-white">
+                      <td
+                        colspan="2"
+                        class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
+                      >
+                        <p class="text-sm font-semibold">
+                          Location Specific Incident Alerts
+                        </p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 border-r border-white text-center"
+                      >
+                        <p class="text-sm font-semibold">Unlimited</p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 text-center border-r border-white flex justify-center"
+                      >
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/check-removebg-preview.png"
+                          alt="check"
+                        />
+                      </td>
+                      <td class="py-3 md:px-6">
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/close.png"
+                          alt="check"
+                        />
+                      </td>
+                    </tr>
+                    <tr class="border-b border-white">
+                      <td
+                        colspan="2"
+                        class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
+                      >
+                        <p class="text-sm font-semibold">Safety Check-In</p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 border-r border-white text-center"
+                      >
+                        <p class="text-sm font-semibold">Unlimited</p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 text-center border-r border-white flex justify-center"
+                      >
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/check-removebg-preview.png"
+                          alt="check"
+                        />
+                      </td>
+                      <td class="py-3 md:px-6">
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/close.png"
+                          alt="check"
+                        />
+                      </td>
+                    </tr>
+                    <tr class="border-b border-white">
+                      <td
+                        colspan="2"
+                        class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
+                      >
+                        <p class="text-sm font-semibold">
+                          Medical Network Access
+                        </p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 border-r border-white text-center"
+                      >
+                        <p class="text-sm font-semibold">Included</p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 text-center border-r border-white flex justify-center"
+                      >
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/check-removebg-preview.png"
+                          alt="check"
+                        />
+                      </td>
+                      <td class="py-3 md:px-6">
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/close.png"
+                          alt="check"
+                        />
+                      </td>
+                    </tr>
+                    <tr class="border-b border-white">
+                      <td
+                        colspan="2"
+                        class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
+                      >
+                        <p class="text-sm font-semibold">In-Country Teams</p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 border-r border-white text-center"
+                      >
+                        <p class="text-sm font-semibold">Included</p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 text-center border-r border-white flex justify-center"
+                      >
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/check-removebg-preview.png"
+                          alt="check"
+                        />
+                      </td>
+                      <td class="py-3 md:px-6">
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/close.png"
+                          alt="check"
+                        />
+                      </td>
+                    </tr>
+                    <tr class="border-b border-white">
+                      <td
+                        colspan="2"
+                        class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
+                      >
+                        <p class="text-sm font-semibold">
+                          24/7 Medical Help Desk
+                        </p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 border-r border-white text-center"
+                      >
+                        <p class="text-sm font-semibold">Unlimited Calls</p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 text-center border-r border-white flex justify-center"
+                      >
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/check-removebg-preview.png"
+                          alt="check"
+                        />
+                      </td>
+                      <td class="py-3 md:px-6">
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/close.png"
+                          alt="check"
+                        />
+                      </td>
+                    </tr>
+                    <tr class="">
+                      <td
+                        colspan="2"
+                        class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
+                      >
+                        <p class="text-sm font-semibold">
+                          Medical Expenses, Evacuation & Repatriation Home
+                        </p>
+                      </td>
+                      <td
+                        class="py-3 border-r border-white md:px-6 text-center"
+                      >
+                        <p class="text-sm font-semibold">$250,000</p>
+                      </td>
+                      <td
+                        class="py-3 border-r border-white md:px-6 text-center flex justify-center"
+                      >
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/check-removebg-preview.png"
+                          alt="check"
+                        />
+                      </td>
+                      <td class="py-3 md:px-6">
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/close.png"
+                          alt="check"
+                        />
+                      </td>
+                    </tr>
+                    <tr class="border-b border-white">
+                      <td
+                        colspan="2"
+                        class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
+                      >
+                        <p class="text-sm font-semibold">
+                          24/7 Crisis Help Desk
+                        </p>
+                      </td>
+                      <td
+                        class="py-3 border-r border-white md:px-6 text-center"
+                      >
+                        <p class="text-sm font-semibold">Unlimited Calls</p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 border-r border-white text-center flex justify-center"
+                      >
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/check-removebg-preview.png"
+                          alt="check"
+                        />
+                      </td>
+                      <td class="py-3 md:px-6">
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/close.png"
+                          alt="check"
+                        />
+                      </td>
+                    </tr>
+                    <tr class="border-b border-white">
+                      <td
+                        colspan="2"
+                        class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
+                      >
+                        <p class="text-sm font-semibold">Security Evacuation</p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 border-r border-white text-center"
+                      >
+                        <p class="text-sm font-semibold">$10,000</p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 text-center border-r border-white flex justify-center"
+                      >
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/check-removebg-preview.png"
+                          alt="check"
+                        />
+                      </td>
+                      <td class="py-3 md:px-6">
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/close.png"
+                          alt="check"
+                        />
+                      </td>
+                    </tr>
+                    <tr class="">
+                      <td
+                        colspan="2"
+                        class="py-3 md:px-6 border-r border-white text-left whitespace-nowrap pl-6"
+                      >
+                        <p class="text-sm font-semibold">
+                          Threat / Kidnap / Extortion Consultancy
+                        </p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 border-r border-white text-center"
+                      >
+                        <p class="text-sm font-semibold">$15,000</p>
+                      </td>
+                      <td
+                        class="py-3 md:px-6 text-center border-r border-white flex justify-center"
+                      >
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/check-removebg-preview.png"
+                          alt="check"
+                        />
+                      </td>
+                      <td class="py-3 md:px-6">
+                        <img
+                          class="w-5 mx-auto"
+                          src="../image/close.png"
+                          alt="check"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <div class="flex space-x-2 items-center">
-                <p class="text-gray-500 text-xs py-4">
-                  To obtain a quote, visit:
-                </p>
-                <a
-                  class="font-bold text-xs text-white py-2 px-6 rounded-full bg-slate"
-                  href=""
-                  >UkraineResponse.com</a
-                >
-              </div>
-              <p
-                style="border: 0.2px solid rgba(128, 128, 128, 0.733)"
-                class="w-full border-gray-400 mt-3"
-              ></p>
-              <p class="text-xs italic text-gray-500 mt-5">
-                Inherent Risks works in the best interest of the policyholder.
-              </p>
+              <!-- </div> -->
             </div>
+          </div>
+          <div
+            class="right-itinary-inner-width bg-custom-yellow lg:overflow-y-auto py-10 md:pt-16 pb-20 pl-5 2xl:pl-10 pr-6 h-full mt-5 lg:mt-0"
+          >
+            <p class="text-3xl font-bold">Membership vs. Insurance</p>
+            <p class="text-xs text-gray-500 py-5">
+              In terms of coverage, benefits and policy triggers, Membership
+              works in the same way as an emergency medical, crisis and
+              evacuation insurance policy. What sets our Membership apart is
+              that it was developed by Inherent Risks, in partnership with
+              Lloyd’s underwriters, from extensive experience of providing
+              <span class="text-gray-600 font-semibold"
+                >Travel Risk Management</span
+              >
+              and
+              <span class="text-gray-600 font-semibold">Duty of Care</span>
+              services to thousands of international and local staff working and
+              volunteering in Ukraine.
+            </p>
+            <p class="text-xs text-gray-500">
+              Membership can be easily purchased online, day or night, with the
+              flexibility to extend travel online for as little as one day; even
+              if you are already in Ukraine. Membership includes
+              <span class="text-gray-600 font-semibold">War & Terrorism</span>
+              cover and is not a ‘self-rescue’ policy
+            </p>
+            <p class="text-xs text-gray-500 py-5">
+              Members can call the 24/7 emergency response phone number to
+              request assistance
+            </p>
+            <p
+              style="border: 0.2px solid rgba(128, 128, 128, 0.733)"
+              class="w-full border-gray-400"
+            ></p>
+            <p class="py-5 text-2xl font-bold">Cover is Available for…</p>
+            <div class="space-y-1">
+              <div class="flex space-x-3 items-center">
+                <img
+                  class="w-3 h-3"
+                  src="../image/check-removebg-preview.png"
+                  alt=""
+                />
+                <p class="text-sm font-medium">Emergency Medical</p>
+              </div>
+              <div class="flex space-x-3 items-center">
+                <img
+                  class="w-3 h-3"
+                  src="../image/check-removebg-preview.png"
+                  alt=""
+                />
+                <p class="text-sm font-medium">
+                  Personal Accident, Death & Disability
+                </p>
+              </div>
+              <div class="flex space-x-3 items-center">
+                <img
+                  class="w-3 h-3"
+                  src="../image/check-removebg-preview.png"
+                  alt=""
+                />
+                <p class="text-sm font-medium">Defense Base Act (DBA)</p>
+              </div>
+              <div class="flex space-x-3 items-center">
+                <img
+                  class="w-3 h-3"
+                  src="../image/check-removebg-preview.png"
+                  alt=""
+                />
+                <p class="text-sm font-medium">Crisis Response</p>
+              </div>
+              <div class="flex space-x-3 items-center">
+                <img
+                  class="w-3 h-3"
+                  src="../image/check-removebg-preview.png"
+                  alt=""
+                />
+                <p class="text-sm font-medium">
+                  Kidnap, Ransom & Extortion (KRE)
+                </p>
+              </div>
+              <div class="flex space-x-3 items-center">
+                <img
+                  class="w-3 h-3"
+                  src="../image/check-removebg-preview.png"
+                  alt=""
+                />
+                <p class="text-sm font-medium">Personal Belongings</p>
+              </div>
+            </div>
+            <div class="flex space-x-2 items-center">
+              <p class="text-gray-500 text-xs py-4">
+                To obtain a quote, visit:
+              </p>
+              <a
+                class="font-semibold text-xs text-yellow py-2 px-6 rounded-full bg-slate"
+                href=""
+                >UkraineResponse.com</a
+              >
+            </div>
+            <p
+              style="border: 0.2px solid rgba(128, 128, 128, 0.733)"
+              class="w-full border-gray-400 mt-3"
+            ></p>
+            <p class="text-xs italic text-gray-500 mt-5">
+              Inherent Risks works in the best interest of the policyholder.
+            </p>
           </div>
         </div>
       </div>
-
-      <!-- footer-content -->
-
-      <div class="hidden xl:block absolute bottom-10 z-20 bottom-btn">
+      <!-- footer content -->
+      <div class="hidden xl:block absolute z-20 bottom-btn">
         <button
           class="bg-gray text-sm font-medium py-2 px-4 rounded-tl-xl rounded-tr-xl text-gray-600"
         >
           Disclaimer
         </button>
       </div>
-
       <footer
-        class="flex justify-start items-center w-full bg-gray bottom-0 absolute hidden md:block"
+        class="lg:flex absolute bottom-0 justify-start items-center w-full bg-gray hidden"
       >
         <h2
           class="text-sm text-gray-900 pl-20 lg:pl-24 xl:pl-28 flex justify-start items-center h-full"
@@ -819,14 +772,13 @@
       <!-- for responsive bottom menu -->
       <div
         id="menu-btn"
-        class="bg-slate py-2 text-white absolute bottom-3 fixed right-4 flex items-center justify-end px-3 md:hidden rounded z-30"
+        class="bg-slate py-2 text-white fixed bottom-3 right-4 flex items-center justify-end px-3 lg:hidden rounded z-20"
       >
         <i class="material-icons text-yellow">menu</i>
       </div>
-
       <div
         id="menu-content"
-        class="bg-slate pt-3 pb-8 w-full text-white absolute bottom-0 hidden z-30"
+        class="bg-slate pt-3 pb-8 w-full text-white fixed bottom-0 hidden z-30"
       >
         <p
           id="close-icon"
@@ -853,6 +805,7 @@
               UKRAINE RISK MAP
             </p>
           </a>
+
           <!-- menu number -2  -->
           <a
             href="FlashAlerts.html"
@@ -867,7 +820,7 @@
           </a>
           <!-- menu number -3  -->
           <a
-            style="border-left: 5px solid #f5f509"
+            style="border-left: 6px solid #f5f509"
             href="HighRisk.html"
             class="flex flex-col items-center justify-center w-full menu-height border-b border-gray-600 text-yellow aside-menu cursor-pointer"
           >
