@@ -15,7 +15,7 @@ body {
 
 header {
     height: 70px;
-    background: linear-gradient(#003138d0, #003138d0), url("./image/bg.jpg");
+    background: linear-gradient(#003138dd, #003138da), url("./image/bg.jpg");
     background-size: cover;
 
 }
@@ -51,7 +51,11 @@ footer {
 }
 
 .small-text {
-    font-size: 50%;
+    /* font-size: 50%; */
+    font-size: 10px;
+    line-height: 115%;
+    font-weight: bold;
+    color: #003138;
 }
 
 .bg-gray {
@@ -161,9 +165,41 @@ footer {
     width: 30%;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .small-text {
+        /* font-size: 50%; */
+        font-size: 8px;
+
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1535px) {
+    .small-text {
+        /* font-size: 50%; */
+        font-size: 9px;
+
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .small-text {
+        /* font-size: 50%; */
+        font-size: 10px;
+        line-height: 115%;
+        font-weight: bold;
+        color: #003138;
+    }
+}
+
+
 
 /* responsive */
 @media screen and (max-width: 1023px) {
+    .small-text {
+        color: #F5F509;
+
+    }
+
     .middle-content {
         position: absolute;
         top: 50px;
