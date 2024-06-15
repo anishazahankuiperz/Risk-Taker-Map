@@ -148,7 +148,11 @@ footer {
 .middle-right-height-without-map {
     background: url("./image/bg.jpg");
     background-size: cover;
-    height: 60%;
+    height: 35%;
+}
+
+.below-map-content-height-without-map {
+    height: 65%;
 }
 
 .yellow-gradient {
@@ -221,7 +225,11 @@ footer {
     }
 
     .middle-right-height-without-map {
-        height: 50%;
+        height: 30%;
+    }
+
+    .below-map-content-height-without-map {
+        height: auto;
     }
 
     /* 3rd page */

@@ -202,7 +202,7 @@
         </div>
         <div class="middle-content-right-part bg-gray z-10">
           <div class="middle-right-height-without-map bg-opacity-30">
-            <div class="h-1/2 flex justify-center items-center">
+            <div class="h-full flex justify-center items-center">
               <div class="flex justify-center items-center">
                 <h2
                   style="max-width: 650px"
@@ -216,11 +216,11 @@
                 </h2>
               </div>
             </div>
-            <div class="h-1/2 yellow-gradient"></div>
+            <!-- <div class="h-1/2 yellow-gradient "></div> -->
           </div>
           <!-- below map content -->
           <div
-            class="bg-white below-map-content-height grid grid-cols-1 lg:grid-cols-3 gap-5 xl:gap-8 px-5 sm:px-8 md:px-12 lg:px-6 xl:px-12 relative h-full xl:h-auto"
+            class="bg-white below-map-content-height-without-map grid grid-cols-1 lg:grid-cols-3 gap-5 xl:gap-8 px-5 sm:px-8 md:px-12 lg:px-8 relative h-full xl:h-auto"
           >
             <div class="hidden lg:block absolute -top-10 right-0">
               <button
@@ -327,7 +327,7 @@
                   <!-- <input type="submit" value="Submit" /> -->
                 </form>
               </div>
-              <div class="px-5 md:px-10 mb-6">
+              <div class="px-5 mr-6 mb-6">
                 <p class="text-sm text-gray-600 py-5">
                   At
                   <span class="font-medium text-slate">Inherent Risks</span>, we
@@ -442,10 +442,10 @@
               </div>
             </div>
             <!-- 3rd section -->
-            <div
-              class="lg:overflow-y-auto lg:overflow-x-hidden my-1 lg:pr-5 pb-10 lg:pb-0"
-            >
-              <div class="third-step-bg w-full p-8 space-y-8">
+            <div class="lg:overflow-y-auto lg:overflow-x-hidden lg:pr-5 my-2">
+              <div
+                class="third-step-bg w-full p-8 space-y-8 h-full flex flex-col justify-center h-full"
+              >
                 <p class="text-2xl font-bold text-yellow opacity-90">
                   Enabling people and organizations to safely
                   <span class="text-slate bg-custom-yellow px-1 pb-1"
@@ -453,12 +453,14 @@
                   >
                   and (re)establish operations.
                 </p>
-                <button
-                  style="border: 2px solid yellow"
-                  class="uppercase text-xs font-bold text-white px-10 py-5"
-                >
-                  DOWNLOAD OUR BROCHURE
-                </button>
+                <div class="inline-fex">
+                  <button
+                    style="border: 2px solid yellow"
+                    class="uppercase text-xs font-bold text-white px-10 py-5"
+                  >
+                    DOWNLOAD OUR BROCHURE
+                  </button>
+                </div>
                 <p class="text-sm text-white">
                   Visit the
                   <a class="font-semibold underline" href="">Inherent Risks</a>
